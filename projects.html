@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-barba="wrapper">
     <nav class="nav">
         <ul class="nav__items">
             <li><a href="about.html">About</a></li>
@@ -38,7 +38,7 @@
             <li><a>Reviews</a></li>
         </ul>
     </nav>
-    <main class="content" id="projects">
+    <main class="content" data-barba="container" data-barba-namespace="projects">
         <section class="content__wrapper --projects">
             <div class="about__copy">
                 <img src="assets/images/sample.svg" width="100%">
@@ -117,8 +117,8 @@
     <footer>
         <p>© 2022</p>
     </footer>
-    <!-- <script src="https://unpkg.com/@barba/core"></script>
-    <script src="scripts.js"></script> -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
