@@ -1,22 +1,12 @@
-barba.use(barbaCss)
+barba.init();
 
-// const bodyTag = document.querySelector("body");
-// const mainTag = document.querySelector("main");
+// hooks
+// data.trigger link
+// data.current current page
+// data.next next page
+// data.current.container current container
+// data.current.namespace custom name given to a container 
+// data.current.url object with all the info about the url of the page
+// data.current.html string rapresentation of html code of the page
+// data.current.route
 
-barba.init({
-    debug: true,
-    transitions: [
-        {
-            // name: "fade",
-            // once() { },
-            // beforeEnter({ }) {
-
-            //     window.scrollTo({
-            //         top: 200 + "vh",
-            //         behavior: "smooth"
-            //     })
-            // }
-            once() { }
-        }
-    ]
-})

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-barba="wrapper">
+<body>
     <nav class="nav">
         <ul class="nav__items">
             <li><a href="/about.html">About</a></li>
@@ -38,78 +38,89 @@
             <li><a>Reviews</a></li>
         </ul>
     </nav>
-    <main class="content" data-barba="container" data-barba-namespace="live">
-        <section class="content__wrapper --live">
-            <div class="live__present">
-                <div class="live__present__block">
-                    <div class="txt-primary">
-                        <p>9-14 November</p>
-                        <p>Ogni Altro Suono Festival</p>
-                        <p>Castrignano de’ Greci, Lecce (I)</p>
-                        <p>Residency</p>
-                    </div>
-                    <div class="txt--secondary">
-                        <p>
-                            Un progetto prodotto da Ramdom.
-                            Direzione artistica di Donato Epiro.
-                        </p>
-                        <p>
-                            Una rassegna di performance live che vede protagonisti artisti nazionali e internazionali
-                            che dialogano tra loro, creando un ponte fra la tradizione musicale popolare e le diverse
-                            incarnazioni della sperimentazione in ambito sonoro. I musicisti sono invitati ad interagire
-                            con gli spazi di Kora valorizzandone l’assoluta unicità tramite interventi sound specific da
-                            realizzare all’interno delle diverse stanze e ambienti.
-                        </p>
-                        <p>
-                            Al programma musicale live si affianca la produzione di podcast che resteranno come traccia
-                            di un dialogo intimo e informale tra gli artisti.
-                        </p>
-                    </div>
 
-                </div>
-            </div>
-            <div class="live__past">
-                <div class="live__past__block">
-                    <div class="block__accordion">
-                        <h2>2021</h2>
-                        <div class="accordion__content txt-primary" id="2021">
+    <main class="content__wrapper" data-barba="wrapper">
+        <section class="content__container" data-barba="container" data-barba-namespace="live">
+            <div class="content --live">
+                <div class="live__present">
+                    <div class="live__present__block">
+                        <div class="txt-primary">
                             <p>9-14 November</p>
                             <p>Ogni Altro Suono Festival</p>
                             <p>Castrignano de’ Greci, Lecce (I)</p>
                             <p>Residency</p>
                         </div>
+                        <div class="txt--secondary">
+                            <p>
+                                Un progetto prodotto da Ramdom.
+                                Direzione artistica di Donato Epiro.
+                            </p>
+                            <p>
+                                Una rassegna di performance live che vede protagonisti artisti nazionali e
+                                internazionali
+                                che dialogano tra loro, creando un ponte fra la tradizione musicale popolare e le
+                                diverse
+                                incarnazioni della sperimentazione in ambito sonoro. I musicisti sono invitati ad
+                                interagire
+                                con gli spazi di Kora valorizzandone l’assoluta unicità tramite interventi sound
+                                specific da
+                                realizzare all’interno delle diverse stanze e ambienti.
+                            </p>
+                            <p>
+                                Al programma musicale live si affianca la produzione di podcast che resteranno come
+                                traccia
+                                di un dialogo intimo e informale tra gli artisti.
+                            </p>
+                        </div>
+
                     </div>
                 </div>
+                <div class="live__past">
+                    <div class="live__past__block">
+                        <div class="block__accordion">
+                            <h2>2021</h2>
+                            <div class="accordion__content txt-primary" id="2021">
+                                <p>9-14 November</p>
+                                <p>Ogni Altro Suono Festival</p>
+                                <p>Castrignano de’ Greci, Lecce (I)</p>
+                                <p>Residency</p>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="live__past__block">
-                    <div class="block__accordion">
-                        <h2>2020</h2>
-                        <div class="accordion__content txt-primary" id="2020">
-                            <p>9-14 November</p>
-                            <p>Ogni Altro Suono Festival</p>
-                            <p>Castrignano de’ Greci, Lecce (I)</p>
-                            <p>Residency</p>
+                    <div class="live__past__block">
+                        <div class="block__accordion">
+                            <h2>2020</h2>
+                            <div class="accordion__content txt-primary" id="2020">
+                                <p>9-14 November</p>
+                                <p>Ogni Altro Suono Festival</p>
+                                <p>Castrignano de’ Greci, Lecce (I)</p>
+                                <p>Residency</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="ui__top">
+                <a href="/index.html">
+                    <svg width="20" height="32" viewBox="0 0 22 33" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 16L11 1L1 16" />
+                        <path d="M11 1V33" />
+                    </svg>
+                </a>
+            </div>
+            <footer class="footer--pages">
+                <p>© 2022</p>
+            </footer>
         </section>
 
     </main>
-    <div class="ui__top">
-        <a href="#menu">
-            <svg width="20" height="32" viewBox="0 0 22 33" xmlns="http://www.w3.org/2000/svg">
-                <path d="M21 16L11 1L1 16" />
-                <path d="M11 1V33" />
-            </svg>
-        </a>
-    </div>
-    <footer>
-        <p>© 2022</p>
-    </footer>
-    <script type="text/javascript" src="assets/js/barba.min.js" id="barba-js"></script>
-    <script type="text/javascript" src="assets/js/barba-css.js" id="gsap-js"></script>
+
+    <!-- <script type="text/javascript" src="assets/js/barba.min.js" id="barba-js"></script>
+    <script type="text/javascript" src="assets/js/barba-css.js" id="gsap-js"></script> -->
+    <script src="https://unpkg.com/@barba/core"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
