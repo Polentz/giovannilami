@@ -3,6 +3,8 @@
     --bg-color: #fff;
     --txt-copy: .8rem;
     --txt-small: .8rem;
+    --timing: 0.25s;
+    --bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .txt--primary {
@@ -249,4 +251,35 @@ footer {
     /* position: absolute;
     bottom: 0;
     left: 0; */
+}
+
+
+
+
+.fade-leave-active,
+.fade-enter-active,
+.fade-once-active {
+    transition: opacity var(--timing), transform var(--timing);
+}
+
+.fade-leave {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.fade-leave-to {
+    opacity: 0;
+    transform: translate(0, 30px);
+}
+
+.fade-enter,
+.fade-once {
+    opacity: 0;
+    transform: translate(0, 30px);
+}
+
+.fade-enter-to,
+.fade-once-active {
+    opacity: 1;
+    transform: translate(0, 0);
 }
