@@ -12,7 +12,7 @@ barba.init({
             beforeEnter({ }) {
 
                 window.scrollTo({
-                    top: mainTag,
+                    top: 200 + "vh",
                     behavior: "smooth"
                 })
             }
