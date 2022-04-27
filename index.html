@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-barba="wrapper">
     <nav class="nav">
         <ul class="nav__items">
-            <li><a href="#about">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a>Email</a></li>
             <li><a>Soundcloud</a></li>
             <li><a>Vimeo</a></li>
@@ -38,25 +38,15 @@
             <li><a>Reviews</a></li>
         </ul>
     </nav>
-    <footer>
+    <main class="content --home" data-barba="container" data-barba-namespace="home">
+        <!-- barba content goes here -->
+    </main>
+    <footer class="--home">
         <p>© 2022</p>
     </footer>
-    <!-- <main class="content" id="about">
-        <section class="content__wrapper">
-            ...
-        </section>
-    </main>
-    <div class="ui__top">
-        <a href="#menu">
-            <svg width="20" height="32" viewBox="0 0 22 33" xmlns="http://www.w3.org/2000/svg">
-                <path d="M21 16L11 1L1 16" />
-                <path d="M11 1V33" />
-            </svg>
-        </a>
-    </div> -->
 
-    <!-- <script src="https://unpkg.com/@barba/core"></script>
-    <script src="scripts.js"></script> -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
