@@ -1,8 +1,3 @@
-// import barba from '@barba/core';
-// import barbaCss from '@barba/css';
-
-// barba.use(barbaCss);
-
 barba.init({
     transitions: [
         {
@@ -30,9 +25,7 @@ barba.hooks.after(() => {
     });
     const link = document.querySelector(".ui__top a");
     link.addEventListener("click", (event) => {
-        console.log("link")
         event.preventDefault();
-
         const href = link.getAttribute("href");
         document.querySelector(href).scrollIntoView({
             behavior: "smooth"

@@ -306,7 +306,7 @@ footer {
 @media only screen and (max-width: 600px) {
     :root {
         --title-medium: 1rem;
-        --title-large: 3rem;
+        --title-large: 4.5rem;
     }
 
     .content {
@@ -330,7 +330,20 @@ footer {
     }
 
     .nav {
-        display: none;
+        position: absolute;
+        top: 1rem;
+        right: 50%;
+        transform: translateX(50%);
+        height: fit-content;
+        width: 100%;
+        padding: 0 1rem;
+        text-align: center;
+        /* background-color: var(--bg-color); */
+    }
+
+    .nav__items {
+        display: flex;
+        justify-content: space-between;
     }
 
     .footer--pages {
@@ -342,12 +355,17 @@ footer {
         height: 100vh;
     }
 
-    /* .menu__items {
-        font-size: 3rem;
-    } */
+    .menu__items {
+        display: flex;
+        justify-content: center;
+    }
 
     .menu__items li {
         margin-bottom: 1rem;
+    }
+
+    .menu__items li a {
+        writing-mode: vertical-lr;
     }
 
     .grid__list {
@@ -362,6 +380,10 @@ footer {
     .ui__top {
         bottom: 1rem;
         right: 1rem;
+    }
+
+    .ui__scroll {
+        bottom: 4rem;
     }
 
     footer {
