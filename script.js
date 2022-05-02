@@ -14,21 +14,33 @@ barba.init({
 
 barba.hooks.enter(() => {
     const element = document.querySelector(".content__wrapper");
-    console.log(element);
     element.scrollIntoView({
         behavior: "smooth"
     });
 });
 
-const link = document.querySelector(".ui__top a");
-link.addEventListener("click", (event) => {
-    event.preventDefault();
+barba.hooks.after(() => {
+    const listItems = document.querySelectorAll(".list");
+    listItems.forEach(item => {
+        const opener = item.querySelector(".list__title")
+        opener.addEventListener("click", () => {
+            [...listItems].filter(q => q !== item).forEach(q => q.classList.remove("opened"))
+            item.classList.toggle("opened")
+        })
+    });
+    const link = document.querySelector(".ui__top a");
+    link.addEventListener("click", (event) => {
+        console.log("link")
+        event.preventDefault();
 
-    const href = link.getAttribute("href");
-    document.querySelector(href).scrollIntoView({
-        behavior: "smooth"
+        const href = link.getAttribute("href");
+        document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+        });
     });
 });
+
+
 
 
 // hooks
