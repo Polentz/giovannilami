@@ -20,19 +20,6 @@ barba.hooks.enter(() => {
     });
 });
 
-const questions = document.querySelectorAll(".list");
-questions.forEach(question => {
-    const opener = question.querySelector(".list__title")
-    opener.addEventListener("click", () => {
-        // close all the other sections
-        [...questions].filter(q => q !== question).forEach(q => q.classList.remove("opened"))
-
-        // then open the current section
-        question.classList.toggle("opened")
-    })
-});
-
-
 const link = document.querySelector(".ui__top a");
 link.addEventListener("click", (event) => {
     event.preventDefault();
