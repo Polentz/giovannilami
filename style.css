@@ -3,28 +3,38 @@
     --bg-color: #fff;
     --txt-copy: .8rem;
     --txt-small: .8rem;
+    --title-medium: calc(.5vw + .6rem);
+    --title-large: calc(3vw + 6rem);
+    --gap-small: 1rem;
+    --gap-large: 2rem;
     --timing: .5s;
 }
 
-.txt--primary {
+.txt--main {
     font-family: "halyard-micro", sans-serif;
     font-size: var(--txt-copy);
     line-height: 1.5;
 }
 
-.txt--secondary {
+.txt--minor {
     font-family: "Roboto Mono", monospace;
     font-weight: 300;
     font-size: var(--txt-copy);
     line-height: 1.5;
 }
 
-h2,
-.txt--title {
+h2 {
     font-family: "halyard-micro", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1rem;
+    font-size: var(--title-medium);
+}
+
+h3 {
+    font-family: "halyard-micro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: var(--title-large);
 }
 
 .sticky {
@@ -38,7 +48,7 @@ body {
     font-family: "halyard-micro", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: .8rem;
+    font-size: var(--txt-copy);
     color: var(--txt-color);
 }
 
@@ -88,7 +98,7 @@ body {
 }
 
 .menu {
-    margin: 10rem 0;
+    margin: 10rem auto;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -96,7 +106,7 @@ body {
 }
 
 .menu__items {
-    font-size: 8rem;
+    font-size: var(--title-large);
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
@@ -121,21 +131,22 @@ body {
 
 .content {
     background: var(--bg-color);
-    padding: 5rem 25% 14rem 5rem;
+    padding: 5rem 15% 14rem 5rem;
 }
 
 .--about,
-.--projects {
+.--projects,
+.--live {
     display: flex;
-    gap: 2rem;
+    gap: var(--gap-large);
 }
 
-.about__copy {
+.content__copy {
     width: 50%;
     height: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--gap-small);
 }
 
 ul.grid__list {
@@ -144,7 +155,7 @@ ul.grid__list {
     align-content: flex-start;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 2rem;
+    gap: var(--gap-large);
 }
 
 li.list__item--releases {
@@ -204,13 +215,45 @@ li figcaption {
     margin-right: 1rem;
 }
 
-.--live {
+.live__present,
+.live__past {
+    width: 50%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: var(--gap-small);
 }
 
-.live__present {
-    width: 50%;
+.live__present__title {
+    font-size: var(--title-large);
+    line-height: 1;
+    margin-bottom: var(--gap-small);
+}
+
+.live__copy {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small);
+}
+
+.list__title {
+    font-size: var(--title-large);
+    line-height: 1;
+    margin-bottom: var(--gap-small);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.list__info {
+    display: none;
+}
+
+.list__info__block {
+    margin-bottom: var(--gap-small);
+}
+
+div.opened div.list__info {
+    display: block;
 }
 
 .ui__top {
@@ -233,7 +276,6 @@ footer {
 .footer--pages {
     background: var(--bg-color);
 }
-
 
 
 
@@ -260,3 +302,69 @@ footer {
 .fade-once-active {
     opacity: 1;
 } */
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --title-medium: 1rem;
+        --title-large: 3rem;
+    }
+
+    .content {
+        margin: .5rem;
+        padding: .5rem;
+    }
+
+    .--about,
+    .--projects,
+    .--live {
+        flex-direction: column;
+        gap: var(--gap-small);
+    }
+
+    .content__copy {
+        width: 100%;
+    }
+
+    .sticky {
+        position: static;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .footer--pages {
+        background: transparent;
+    }
+
+    .menu {
+        margin: 0 auto;
+        height: 100vh;
+    }
+
+    /* .menu__items {
+        font-size: 3rem;
+    } */
+
+    .menu__items li {
+        margin-bottom: 1rem;
+    }
+
+    .grid__list {
+        flex-direction: column;
+    }
+
+    li.list__item--releases,
+    li.list__item--media {
+        max-width: 100%;
+    }
+
+    .ui__top {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
