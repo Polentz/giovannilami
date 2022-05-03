@@ -349,7 +349,7 @@ footer {
         width: 100%;
         padding: 0 1rem;
         text-align: center;
-        /* background-color: var(--bg-color); */
+        background-color: var(--bg-color);
     }
 
     .nav__items {
@@ -365,16 +365,14 @@ footer {
     .menu__items {
         display: flex;
         justify-content: center;
+        align-items: flex-start;
     }
 
     .menu__items li {
-        margin-bottom: 1rem;
-    }
-
-    .menu__items li a {
         -webkit-writing-mode: vertical-lr;
         -ms-writing-mode: tb-lr;
         writing-mode: vertical-lr;
+        display: block;
     }
 
     .grid__list {
