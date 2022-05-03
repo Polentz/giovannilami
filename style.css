@@ -389,6 +389,11 @@ footer {
         width: 100%;
     }
 
+    .live__present__title,
+    .list__title {
+        margin-bottom: 0;
+    }
+
     .ui__top {
         bottom: 1rem;
         right: 1rem;
