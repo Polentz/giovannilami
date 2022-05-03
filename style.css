@@ -340,7 +340,7 @@ footer {
 
     .nav {
         position: absolute;
-        top: 1rem;
+        top: 102vh;
         right: 50%;
         transform: translateX(50%);
         height: -webkit-fit-content;
@@ -349,7 +349,7 @@ footer {
         width: 100%;
         padding: 0 1rem;
         text-align: center;
-        background-color: var(--bg-color);
+        /* background-color: var(--bg-color); */
     }
 
     .nav__items {
@@ -395,7 +395,7 @@ footer {
     }
 
     .ui__scroll {
-        bottom: 4rem;
+        bottom: 50%;
     }
 
     footer {
