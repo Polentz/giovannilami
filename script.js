@@ -15,14 +15,35 @@ barba.hooks.enter(() => {
 });
 
 barba.hooks.after(() => {
+    // const listItems = document.querySelectorAll(".list");
+    // listItems.forEach(item => {
+    //     const opener = item.querySelector(".list__title");
+    //     opener.addEventListener("click", () => {
+    //         [...listItems].filter(i => i !== item).forEach(i => i.classList.remove("opened"));
+    //         item.classList.toggle("opened");
+    //     })
+    // });
+
     const listItems = document.querySelectorAll(".list");
     listItems.forEach(item => {
-        const opener = item.querySelector(".list__title")
+        const opener = item.querySelector(".list__title");
+        const closer = document.querySelector(".card__close");
         opener.addEventListener("click", () => {
-            [...listItems].filter(q => q !== item).forEach(q => q.classList.remove("opened"))
-            item.classList.toggle("opened")
-        })
+            [...listItems].filter(i => i !== item).forEach(i => i.classList.remove("opened"));
+            closer.classList.add("appear");
+            item.classList.toggle("opened");
+            if (item.classList.contains("opened")) {
+                closer.addEventListener("click", () => {
+                    item.classList.remove("opened")
+                    setTimeout(() => {
+                        closer.classList.remove("appear");
+                    }, 100);
+                })
+            }
+        });
+
     });
+
     const link = document.querySelector(".ui__top a");
     link.addEventListener("click", (event) => {
         event.preventDefault();
