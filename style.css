@@ -582,6 +582,10 @@ footer {
         right: 1rem;
     }
 
+    .ui--up:hover {
+        bottom: 5rem;
+    }
+
     .ui--scroll {
         bottom: 8rem;
     }
