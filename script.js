@@ -15,26 +15,26 @@ barba.hooks.enter(() => {
 });
 
 barba.hooks.after(() => {
-    // const listItems = document.querySelectorAll(".list");
-    // listItems.forEach(item => {
-    //     const opener = item.querySelector(".list__title");
-    //     opener.addEventListener("click", () => {
-    //         [...listItems].filter(i => i !== item).forEach(i => i.classList.remove("opened"));
-    //         item.classList.toggle("opened");
-    //     })
-    // });
-
     const listItems = document.querySelectorAll(".list");
     listItems.forEach(item => {
         const opener = item.querySelector(".list__title");
-        const closer = document.querySelector(".card__close");
+        const closer = document.querySelector(".ui--close");
         opener.addEventListener("click", () => {
             [...listItems].filter(i => i !== item).forEach(i => i.classList.remove("opened"));
             closer.classList.add("appear");
+
+            const outside = document.querySelectorAll(".item__cover")
+            outside.forEach(e => {
+                e.style.pointerEvents = "none";
+            });
+
             item.classList.toggle("opened");
             if (item.classList.contains("opened")) {
                 closer.addEventListener("click", () => {
-                    item.classList.remove("opened")
+                    item.classList.remove("opened");
+                    outside.forEach(e => {
+                        e.style.pointerEvents = "all";
+                    });
                     setTimeout(() => {
                         closer.classList.remove("appear");
                     }, 100);
@@ -44,7 +44,7 @@ barba.hooks.after(() => {
 
     });
 
-    const link = document.querySelector(".ui__top a");
+    const link = document.querySelector(".ui--up");
     link.addEventListener("click", (event) => {
         event.preventDefault();
         const href = link.getAttribute("href");
@@ -56,15 +56,21 @@ barba.hooks.after(() => {
 
 
 
+    // const listItems = document.querySelectorAll(".list");
+    // listItems.forEach(item => {
+    //     const opener = item.querySelector(".list__title");
+    //     opener.addEventListener("click", () => {
+    //         [...listItems].filter(i => i !== item).forEach(i => i.classList.remove("opened"));
+    //         item.classList.toggle("opened");
+    //     })
+    // });
 
-// hooks
-// once
-// data.trigger link
-// data.current current page
-// data.next next page
-// data.current.container current container
-// data.current.namespace custom name given to a container 
-// data.current.url object with all the info about the url of the page
-// data.current.html string rapresentation of html code of the page
-// data.current.route
 
+    // , views: [{
+    //     namespace: "releases",
+    //     beforeEnter({ next }) {
+    //         let script = document.createElement("script");
+    //         script.src = "main.js";
+    //         next.container.appendChild(script);
+    //     },
+    // }],

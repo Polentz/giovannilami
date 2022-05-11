@@ -1,26 +1,56 @@
 :root {
     --txt-color: #141414;
     --bg-color: #fff;
+    --ax-light-color: #e6e6e6;
+    --ax-dark-color: #303030;
     --txt-copy: .8rem;
     --txt-small: .8rem;
     --title-medium: calc(.5vw + .6rem);
     --title-large: calc(3vw + 6rem);
     --gap-small: 1rem;
     --gap-large: 2rem;
-    --timing: .5s;
 }
 
-.txt--main {
+body {
+    overflow-x: hidden;
+    position: relative;
     font-family: "halyard-micro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: var(--txt-copy);
-    line-height: 1.5;
+    color: var(--txt-color);
 }
 
-.txt--minor {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 300;
-    font-size: var(--txt-copy);
-    line-height: 1.5;
+a {
+    position: relative;
+}
+
+a::after,
+.item__cover img::after {
+    content: "";
+    background: var(--ax-dark-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    z-index: 1;
+    transition: transform 0.1s ease-in-out;
+}
+
+a:hover::after,
+.item__cover img:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.a--blend-effect::after {
+    content: "";
+    background: var(--bg-color);
+    mix-blend-mode: difference;
+    opacity: .5;
 }
 
 h2 {
@@ -35,23 +65,26 @@ h3 {
     font-weight: 500;
     font-style: normal;
     font-size: var(--title-large);
-    text-indent: -16px;
+}
+
+
+.txt--main {
+    font-family: "halyard-micro", sans-serif;
+    font-size: var(--txt-copy);
+    line-height: 1.5;
+}
+
+.txt--minor {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    font-size: var(--txt-copy);
+    line-height: 1.5;
 }
 
 .sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 2rem;
-}
-
-body {
-    overflow-x: hidden;
-    position: relative;
-    font-family: "halyard-micro", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: var(--txt-copy);
-    color: var(--txt-color);
 }
 
 .nav {
@@ -80,19 +113,19 @@ body {
 .landing__image {
     width: 100%;
     height: 100%;
-    background-image: url("assets/images/Grainy_Background_02.png");
+    background-image: url("assets/images/media/video-claustre-renaixentista.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
+    /* -webkit-filter: grayscale(1);
+    filter: grayscale(1); */
     position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
 }
 
-.ui__scroll {
+.ui--scroll {
     position: absolute;
     bottom: 2rem;
     left: 50%;
@@ -101,7 +134,7 @@ body {
     text-transform: uppercase;
 }
 
-.ui__scroll p {
+.ui--scroll p {
     text-align: center;
 }
 
@@ -131,38 +164,6 @@ body {
     margin-bottom: 0;
 }
 
-/* .link--hover {
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    white-space: nowrap;
-}
-
-.link--hover::after {
-    content: attr(data-text);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    transform-origin: 100% 50%;
-    transform: translate3d(150%, 0, 0);
-    transition: transform .5s cubic-bezier(.5, .5, .5, 1);
-}
-
-.link--hover:hover::after {
-    transform: translate3d(0, 0, 0);
-}
-
-.link--hover span {
-    display: inline-block;
-    transition: transform .5s cubic-bezier(.5, .5, .5, 1);
-}
-
-.link--hover:hover span {
-    transform: translate3d(-150%, 0, 0);
-} */
-
 .content__wrapper {
     height: auto;
 }
@@ -173,7 +174,7 @@ body {
 
 .content {
     background: var(--bg-color);
-    padding: 5rem 15% 14rem 5rem;
+    padding: 5rem 20vw 14rem 5rem;
 }
 
 .--about,
@@ -221,9 +222,11 @@ li figcaption {
 
 .item__cover img {
     width: 100%;
+    position: relative;
+    z-index: 2;
     transition: -webkit-filter 1s ease-out;
-    transition: filter 1s ease-out;
-    transition: filter 1s ease-out, -webkit-filter 1s ease-out;
+    transition: filter .5s ease-out;
+    transition: filter .5s ease-out, -webkit-filter .5s ease-out;
 }
 
 .item__cover img:hover {
@@ -235,38 +238,42 @@ li figcaption {
     font-family: "halyard-micro", sans-serif;
     font-weight: 500;
     font-style: normal;
-}
-
-.item__link {
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .card {
-    width: 75vw;
+    width: 78vw;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     padding: 5rem;
-    /* transform: translate(-50%, -50%); */
     background-color: var(--bg-color);
     z-index: 9;
     overflow-y: scroll;
     border-right: solid 1px var(--txt-color);
 }
 
-.card::-webkit-scrollbar,
-.card__gallery::-webkit-scrollbar {
+.card::-webkit-scrollbar {
     display: none;
+}
+
+.card__gallery::-webkit-scrollbar {
+    height: .5rem;
+}
+
+.card__gallery::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+.card__gallery::-webkit-scrollbar-thumb {
+    background: var(--ax-dark-color);
 }
 
 .card__gallery {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: var(--gap-large);
     width: auto;
     overflow-x: scroll;
 }
@@ -277,9 +284,6 @@ li figcaption {
 }
 
 .card__text {
-    /* display: flex;
-    flex-direction: column;
-    gap: var(--gap-small); */
     margin: var(--gap-large) 0;
 }
 
@@ -295,11 +299,15 @@ li figcaption {
     margin-bottom: 1rem;
 }
 
+p.buy.txt--minor {
+    margin-bottom: 5rem;
+}
+
 .card__text--credits p {
     margin: 0;
 }
 
-.card__close {
+.ui--close {
     width: 2rem;
     height: 2rem;
     background-image: url("assets/ui/close.svg");
@@ -309,14 +317,26 @@ li figcaption {
     right: 5rem;
     cursor: pointer;
     z-index: 10;
+    transform: rotate(0);
     opacity: 0;
-    transition: opacity .5s ease;
+    transition: all .5s ease;
 }
 
-.card__close.appear {
+.ui--close:hover {
+    transform: rotate(45deg);
+}
+
+.ui--close.appear {
     opacity: 1;
 }
 
+.label,
+.play,
+.buy {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
 
 .label::before {
     content: "";
@@ -348,10 +368,6 @@ li figcaption {
     margin-right: 1rem;
 }
 
-.buy {
-    margin-bottom: 5rem;
-}
-
 .live__present,
 .live__past {
     width: 50%;
@@ -361,7 +377,6 @@ li figcaption {
 }
 
 .live__present__title {
-    font-size: var(--title-large);
     line-height: 1;
     margin-bottom: var(--gap-small);
 }
@@ -398,15 +413,24 @@ div.opened div.list__info {
     display: block;
 }
 
-.ui__top {
+.ui--up {
+    width: 2rem;
+    height: 41px;
+    background-image: url("assets/ui/up.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
-    bottom: 10rem;
+    bottom: 12rem;
     right: 5rem;
+    transition: bottom .5s ease;
 }
 
-.ui__top svg {
-    fill: none;
-    stroke: var(--txt-color);
+.ui--up::after {
+    display: none;
+}
+
+.ui--up:hover {
+    bottom: 12.5rem;
 }
 
 footer {
@@ -418,33 +442,6 @@ footer {
 .footer--pages {
     background: var(--bg-color);
 }
-
-
-
-
-/* .fade-leave-active,
-.fade-enter-active,
-.fade-once-active {
-    transition: opacity var(--timing);
-}
-
-.fade-leave {
-    opacity: 1;
-}
-
-.fade-leave-to {
-    opacity: 0;
-}
-
-.fade-enter,
-.fade-once {
-    opacity: 0;
-}
-
-.fade-enter-to,
-.fade-once-active {
-    opacity: 1;
-} */
 
 @media only screen and (max-width: 600px) {
     :root {
@@ -474,7 +471,7 @@ footer {
 
     .nav {
         position: absolute;
-        top: 102vh;
+        top: 100vh;
         right: 50%;
         transform: translateX(50%);
         height: -webkit-fit-content;
@@ -483,7 +480,6 @@ footer {
         width: 100%;
         padding: 0 1rem;
         text-align: center;
-        /* background-color: var(--bg-color); */
     }
 
     .nav__items {
@@ -564,12 +560,12 @@ footer {
         padding: var(--gap-small);
     }
 
-    .ui__top {
+    .ui--up {
         bottom: 1rem;
         right: 1rem;
     }
 
-    .ui__scroll {
+    .ui--scroll {
         bottom: 4rem;
     }
 

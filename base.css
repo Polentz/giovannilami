@@ -160,3 +160,49 @@ button,
 input {
     outline: 0
 }
+
+p::-moz-selection,
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection,
+br::-moz-selection,
+span::-moz-selection,
+a::-moz-selection,
+li::-moz-selection,
+img::-moz-selection,
+audio::-moz-selection,
+video::-moz-selection,
+div::-moz-selection,
+em::-moz-selection {
+    color: var(--ax-light-color);
+    background: transparent;
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+br::selection,
+span::selection,
+a::selection,
+li::selection,
+img::selection,
+audio::selection,
+video::selection,
+div::selection,
+em::selection {
+    color: var(--ax-light-color);
+    background: transparent;
+}
+
+::-webkit-scrollbar {
+    width: .4rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--ax-dark-color);
+}
