@@ -23,6 +23,7 @@ body {
 
 a {
     position: relative;
+    text-decoration: underline;
 }
 
 a::after,
@@ -46,6 +47,10 @@ a:hover::after,
     transform-origin: left;
 }
 
+.a--blend-effect {
+    text-decoration: none;
+}
+
 .a--blend-effect::after {
     content: "";
     background: var(--bg-color);
@@ -65,6 +70,13 @@ h3 {
     font-weight: 500;
     font-style: normal;
     font-size: var(--title-large);
+}
+
+h4 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    font-size: var(--txt-copy);
+    line-height: 1.5;
 }
 
 
@@ -102,6 +114,10 @@ h3 {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+.nav__items a {
+    text-decoration: none;
 }
 
 .landing {
@@ -338,6 +354,12 @@ p.buy.txt--minor {
     justify-content: flex-start;
 }
 
+.label a,
+.play a,
+.buy a {
+    text-decoration: none;
+}
+
 .label::before {
     content: "";
     width: 20px;
@@ -374,6 +396,7 @@ p.buy.txt--minor {
     display: flex;
     flex-direction: column;
     gap: var(--gap-small);
+    padding-right: 5rem;
 }
 
 .live__present__title {
@@ -536,6 +559,7 @@ footer {
     .live__present,
     .live__past {
         width: 100%;
+        padding-right: 0;
     }
 
     .live__past {
