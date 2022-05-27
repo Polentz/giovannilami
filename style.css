@@ -433,6 +433,11 @@ h3.list__title {
     margin-bottom: var(--gap-small);
 }
 
+.list__info__block img {
+    width: 100%;
+    margin-top: var(--gap-small);
+}
+
 div.opened div.list__info {
     display: block;
 }
