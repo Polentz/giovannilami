@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giovanni Lami – Releases</title>
-
+    <meta name="description"
+        content="Giovanni Lami is a sound artist and musician who works within soundscape and sound-ecology boundaries since 2009/10">
+    <link rel="canonical" href="https://www.giovannilami.com/">
+    <meta name="keywords" content="sound, artist, musician, soundscape, sound-ecology">
     <meta property="og:locale" content="en_IT">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Giovanni Lami">
@@ -32,7 +35,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/rpe5xur.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -48,8 +52,8 @@
         </ul>
     </nav>
     <section class="landing">
-        <div class="landing__image"></div>
-        <div class="ui--scroll">
+        <div class="landing__image cms-editable" data-type="background" id="landing__image"></div>
+        <div class="ui--scroll cms-lock">
             <p>Scroll down</p>
         </div>
     </section>
@@ -67,11 +71,10 @@
             <div class="ui--close"></div>
             <div class="content">
                 <ul class="grid__list">
-
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
-                                <!-- questo div list__container può essere eliminato -->
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album01">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img
@@ -83,14 +86,15 @@
                                                 target="_blank">Ftarri</a></p>
                                     </figcaption>
                                 </figure>
+
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img
+                                            <img class="cms-repeatable"
                                                 src="assets/images/releases/thought-is-the-enemy/thought-is-the-enemy.jpeg">
-                                            <img
+                                            <img class="cms-repeatable"
                                                 src="assets/images/releases/thought-is-the-enemy/thought-is-the-enemy-01.png">
-                                            <img
+                                            <img class="cms-repeatable"
                                                 src="assets/images/releases/thought-is-the-enemy/thought-is-the-enemy-02.jpeg">
                                         </div>
 
@@ -99,23 +103,26 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://ftarrilabel.bandcamp.com/album/thought-is-the-enemy"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>Krishnamurti is the duo project of Italian sound artists Giovanni Lami
+                                            <p class="cms-repeatable">Krishnamurti is the duo project of Italian sound
+                                                artists Giovanni Lami
                                                 and Lorenzo Abattoir, who aim to create a new type of soundscape using
                                                 the Indian drone instrument called the shruti box.</p>
-                                            <p>This CD is made up of four pieces recorded by Krishnamurti in Torino in
+                                            <p class="cms-repeatable">This CD is made up of four pieces recorded by
+                                                Krishnamurti in Torino in
                                                 September 2019. Multilayered sound overlaps and reverberates throughout
                                                 all of the pieces. Over a central layer of sound, other sounds are
                                                 produced in a granular or swath-like manner, murmuring and bubbling as
                                                 they intertwine and adhere. Tinged with dark colors and at the same time
                                                 imparting a pleasant feeling, this exceptional work abounds in
                                                 mysterious charm.</p>
-                                            <p><a href="https://www.discogs.com/artist/3875351-Lorenzo-Abattoir"
+                                            <p class="cms-repeatable"><a
+                                                    href="https://www.discogs.com/artist/3875351-Lorenzo-Abattoir"
                                                     target="_blank">Lorenzo Abattoir</a>, who lives in Torino, has since
                                                 the latter half of the 2010s been increasing his sound installation
                                                 activities, festival appearances, etc. He has also released a larger
                                                 number of recordings (CDs, cassette tapes, LPs), many of them
                                                 collaborations with other musicians.</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Mastered by Giuseppe Ielasi</p>
                                                 <p>Artwork by Nàresh Ran</p>
                                                 <p>Released December 13, 2020</p>
@@ -123,8 +130,9 @@
                                         </div>
                                         <div class="card__text">
                                             <h3>Reviews</h3>
-                                            <h2>African Paper / 2021</h2>
-                                            <p>Zwischen all dem Rauschen, Knacken und undefinierbaren Hantieren
+                                            <h2 class="cms-repeatable">African Paper / 2021</h2>
+                                            <p class="cms-repeatable">Zwischen all dem Rauschen, Knacken und
+                                                undefinierbaren Hantieren
                                                 erkennt man sofort die Natur. Zwitschernde, zirpende und quakende
                                                 Tiere drängen mit ihren Lautäußerungen zwischen die Klänge von
                                                 Wasser und Wind und schaffen eine fast pittoreske Szenerie, und
@@ -174,7 +182,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album02">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/deva-ovel/deva-ovel.jpeg">
@@ -188,8 +197,10 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/deva-ovel/deva-ovel.jpeg">
-                                            <img src="assets/images/releases/deva-ovel/deva-ovel-01.png">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/deva-ovel/deva-ovel.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/deva-ovel/deva-ovel-01.png">
                                         </div>
 
                                         <div class="card__text">
@@ -197,7 +208,8 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://kohlhaas.bandcamp.com/album/deva-ovel"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>This self-titled LP is the first batch of tracks delivered by the
+                                            <p class="cms-repeatable">This self-titled LP is the first batch of tracks
+                                                delivered by the
                                                 polymorphous sounding entity identifying themself as Deva Ovel. Emerging
                                                 from the Adriatic coast, the sound of Deva Ovel manifests in a
                                                 captivating layering of vocal fragments, where text and voice are
@@ -207,7 +219,7 @@
                                                 eccentric narrative which delves into hauntingly fascinating sceneries
                                                 while keeping a high level of tension.</p>
 
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Written, composed, performed, mixed and designed by Deva Ovel</p>
                                                 <p>Recorded in Ravenna, Italy, between October 2019 and January 2020
                                                 </p>
@@ -224,7 +236,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album03">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/raw/raw.jpeg">
@@ -239,22 +252,23 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/raw/raw.jpeg">
-                                            <img src="assets/images/releases/raw/raw-01.jpeg">
+                                            <img class="cms-repeatable" src="assets/images/releases/raw/raw.jpeg">
+                                            <img class="cms-repeatable" src="assets/images/releases/raw/raw-01.jpeg">
                                         </div>
 
                                         <div class="card__text">
                                             <h2 class="item__title">RAW</h2>
-                                            <p class="buy txt--minor"><a
+                                            <p class="buy txt--minor cms-repeatable"><a
                                                     href="https://cloud-chamber.bandcamp.com/album/raw" target="_blank">
                                                     Listen and buy here</a></p>
-                                            <p>/2019 C-24</p>
-                                            <p>Elemental and raw captures of manipulated magnetic tape performances,
+                                            <p class="cms-repeatable">/2019 C-24</p>
+                                            <p class="cms-repeatable">Elemental and raw captures of manipulated magnetic
+                                                tape performances,
                                                 utilising Lami’s signature take on electroacoustic improvisation and
                                                 field recordings. This release is aimed at preserving the full energy of
                                                 live performance, whilst maintaining aesthetic coherence.</p>
 
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Performed, recorded, edited and mastered by Giovanni Lami, Ravenna,
                                                     2016-2019</p>
                                                 <p>All the tracks come from single sessions recorded in stereo, no other
@@ -272,7 +286,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album04">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/hys/hys.png">
@@ -286,10 +301,10 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/hys/hys.png">
-                                            <img src="assets/images/releases/hys/hys-01.png">
-                                            <img src="assets/images/releases/hys/hys-02.png">
-                                            <img src="assets/images/releases/hys/hys-03.png">
+                                            <img class="cms-repeatable" src="assets/images/releases/hys/hys.png">
+                                            <img class="cms-repeatable" src="assets/images/releases/hys/hys-01.png">
+                                            <img class="cms-repeatable" src="assets/images/releases/hys/hys-02.png">
+                                            <img class="cms-repeatable" src="assets/images/releases/hys/hys-03.png">
                                         </div>
 
                                         <div class="card__text">
@@ -297,25 +312,28 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://archiveofficielle.bandcamp.com/album/hys"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2019 5" reel (ltd. edition)</p>
-                                            <p>HYS is a collaboration between sound artist Giovanni Lami and visual
+                                            <p class="cms-repeatable">/2019 5" reel (ltd. edition)</p>
+                                            <p class="cms-repeatable">HYS is a collaboration between sound artist
+                                                Giovanni Lami and visual
                                                 artist Clio Casadei. During the summer of 2018, Lami created a 6 minute
                                                 and 20 seconds sound piece recorded on-site in a park in Faenza ITALY.
                                                 Casadei was later approached to create a visual transcription of this
                                                 audio. Both versions, audio and visual, now hold the same title: HYS.
                                             </p>
-                                            <p>Giovanni Lami’s work revolves around field recordings using reel-to-reel
+                                            <p class="cms-repeatable">Giovanni Lami’s work revolves around field
+                                                recordings using reel-to-reel
                                                 recorders. During a recording session, the ambient sound is captured but
                                                 also altered by the use of different objects, microphones, and manual
                                                 interventions. The mechanical sound of the recording device itself is
                                                 sometimes captured and fed back into the magnetic tape. This well
                                                 developed approach has been used in his latest series Hysteresis I to
                                                 IV, released on various international labels.</p>
-                                            <p>This very limited edition contains a 5" reel-to-reel tape dubbed
+                                            <p class="cms-repeatable">This very limited edition contains a 5"
+                                                reel-to-reel tape dubbed
                                                 personally by Giovanni Lami. It also includes a copy of the visual
                                                 transcript.</p>
 
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Delux box with laser cut foam insert containing the 5"reel-to-reel +
                                                     a copie of AO_013</p>
                                                 <p>1 Track (06:20)</p>
@@ -334,7 +352,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album05">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/ife/ife.jpeg">
@@ -348,7 +367,7 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/ife/ife.jpeg">
+                                            <img class="cms-repeatable" src="assets/images/releases/ife/ife.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -356,9 +375,9 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://dinzuartefacts.bandcamp.com/album/ife"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2018 C-30</p>
-                                            <p>Giovanni Lami & Glauco Salvo</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <p class="cms-repeatable">/2018 C-30</p>
+                                            <p class="cms-repeatable">Giovanni Lami & Glauco Salvo</p>
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Nagra reel to reel, octatrack, microphones, objects, mixer by
                                                     Giovanni Lami</p>
                                                 <p>4-track tape recorders, endless cassettes, Walkman, speakers
@@ -377,8 +396,9 @@
                                         </div>
                                         <div class="card__text">
                                             <h3>Reviews</h3>
-                                            <h2>Noise Not Music / 2019</h2>
-                                            <p>There are a lot of words I could use to describe the patient, reserved
+                                            <h2 class="cms-repeatable">Noise Not Music / 2019</h2>
+                                            <p class="cms-repeatable">There are a lot of words I could use to describe
+                                                the patient, reserved
                                                 tape music of Ife, a collaboration between Italian artists Giovanni Lami
                                                 and Glauco Salvo. One that immediately comes to mind is ‘simmering;’
                                                 especially with the track that occupies the entirety of the A side,
@@ -400,8 +420,9 @@
                                                 Ife, the tape is certainly the most impressive collaborative outing I’ve
                                                 heard from Lami, and yields much more than its relatively short length
                                                 would imply. (Jack Davidson)</p>
-                                            <h2>Slug Magazine / 2019</h2>
-                                            <p>Street: 01.15. Giovanni Lami & Glauco Salvo = Deathprod + The Elks. Dinzu
+                                            <h2 class="cms-repeatable">Slug Magazine / 2019</h2>
+                                            <p class="cms-repeatable">Street: 01.15. Giovanni Lami & Glauco Salvo =
+                                                Deathprod + The Elks. Dinzu
                                                 Artifacts’ first batch of 2019 exists comfortably in the label’s
                                                 signature style. Both Ife and Hesitant sit on the edge of what most
                                                 would term music, veering further into expository sound collage work. Of
@@ -422,7 +443,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album06">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img
@@ -437,13 +459,13 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img
+                                            <img class="cms-repeatable"
                                                 src="assets/images/releases/in-chiaro-in-guardia/in-chiaro-in-guardia.jpeg">
-                                            <img
+                                            <img class="cms-repeatable"
                                                 src="assets/images/releases/in-chiaro-in-guardia/in-chiaro-in-guardia-01.jpeg">
-                                            <img
+                                            <img class="cms-repeatable"
                                                 src="assets/images/releases/in-chiaro-in-guardia/in-chiaro-in-guardia-02.jpeg">
-                                            <img
+                                            <img class="cms-repeatable"
                                                 src="assets/images/releases/in-chiaro-in-guardia/in-chiaro-in-guardia-03.jpeg">
                                         </div>
 
@@ -452,10 +474,11 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://soundsagainsthumanity.bandcamp.com/album/in-chiaro-in-guardia"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2018 C-22</p>
-                                            <p>This work goes between musique-concrète, old-style tape music, raw field
+                                            <p class="cms-repeatable">/2018 C-22</p>
+                                            <p class="cms-repeatable">This work goes between musique-concrète, old-style
+                                                tape music, raw field
                                                 recording and drone music.</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Recorded, edited and mastered by Giovanni Lami, Summer 2018</p>
                                                 <p>
                                                     A - in chiaro (10:48)<br>
@@ -481,7 +504,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album07">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/melange/melange.jpeg">
@@ -495,11 +519,16 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/melange/melange.jpeg">
-                                            <img src="assets/images/releases/melange/melange-01.jpeg">
-                                            <img src="assets/images/releases/melange/melange-02.jpeg">
-                                            <img src="assets/images/releases/melange/melange-03.jpeg">
-                                            <img src="assets/images/releases/melange/melange-04.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/melange/melange.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/melange/melange-01.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/melange/melange-02.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/melange/melange-03.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/melange/melange-04.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -507,22 +536,25 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://grannyrecords.bandcamp.com/album/m-lange"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2018 C-30</p>
-                                            <p>
+                                            <p class="cms-repeatable">/2018 C-30</p>
+                                            <p class="cms-repeatable">
                                                 Nuova Superficie is the duo of Giovanni Lami & Enrico Malatesta.
                                             </p>
-                                            <p>The aim is to transpose on a physical media a complex sound-space, in
+                                            <p class="cms-repeatable">The aim is to transpose on a physical media a
+                                                complex sound-space, in
                                                 which each listening-experience can be free to evolve and wander and get
                                                 lost.</p>
-                                            <p>The sound is made from several diffusion points, recording the line and
+                                            <p class="cms-repeatable">The sound is made from several diffusion points,
+                                                recording the line and
                                                 the ambience, and is mainly defined by sound's cusps on a dense texture,
                                                 really homogeneous but rich in details and micro-perturbations.
                                                 It's a non-stop negotiation between details on the horizon and the
                                                 horizon itself. It's a non-stop dialogue with a lack of balance.</p>
-                                            <p>The recordings come mainly from a residency in Milan at MTM Cavallerizza
+                                            <p class="cms-repeatable">The recordings come mainly from a residency in
+                                                Milan at MTM Cavallerizza
                                                 in May 2017, joined with previously studio recordings in Ravenna and
                                                 Cesena.</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Music by Giovanni Lami & Enrico Malatesta (Nuova Superficie)</p>
                                                 <p>Recorded by Nuova Superficie</p>
                                                 <p>Mastered by Giuseppe Ielasi</p>
@@ -538,7 +570,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album08">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/sinalefe/sinalefe.jpeg">
@@ -553,7 +586,8 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/sinalefe/sinalefe.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/sinalefe/sinalefe.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -561,14 +595,15 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://grannyrecords.bandcamp.com/album/m-lange"
                                                     target="_blank"> Listen and buy here</a></p>
-                                            <p>/2018 C-24</p>
-                                            <p>Like a bridge from the beginning to the end, as “sinalefe” merges two
+                                            <p class="cms-repeatable">/2018 C-24</p>
+                                            <p class="cms-repeatable">Like a bridge from the beginning to the end, as
+                                                “sinalefe” merges two
                                                 syllables into one from different words, i decided to work only in the
                                                 beginning and the end of the set i’ve played in 2016 – 2017, bringing it
                                                 out from the live/improvised approach and developing it in the studio,
                                                 cropping several recordings i took during the set here and there and
                                                 adding some new sounds.</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Nagra recorders, old tapes, vlf receiver, microphones, samples,
                                                     objects.</p>
                                                 <p>
@@ -580,8 +615,9 @@
                                         </div>
                                         <div class="card__text">
                                             <h3>Reviews</h3>
-                                            <h2>Noise Not Music / 2019</h2>
-                                            <p>Giovanni Lami’s unique brand of musique concrète has an energy that is
+                                            <h2 class="cms-repeatable">Noise Not Music / 2019</h2>
+                                            <p class="cms-repeatable">Giovanni Lami’s unique brand of musique concrète
+                                                has an energy that is
                                                 all its own. 2016’s Bias, an unmatched modern masterpiece as far as I’m
                                                 concerned, distilled Lami’s examinations of degradation and interference
                                                 to a brooding, nocturnal palette of immersive sound. This work is
@@ -610,7 +646,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album09">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/pleiadi/pleiadi.jpeg">
@@ -624,8 +661,10 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/pleiadi/pleiadi.jpeg">
-                                            <img src="assets/images/releases/pleiadi/pleiadi-01.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/pleiadi/pleiadi.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/pleiadi/pleiadi-01.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -633,15 +672,17 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://conjuntovacio.bandcamp.com/album/pleiadi-i"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2018 C-30</p>
-                                            <p>TYPO are Giovanni Lami and Leonardo Passanti.</p>
-                                            <p>Analog synths, reel to reel recorders, open microphones and samples
+                                            <p class="cms-repeatable">/2018 C-30</p>
+                                            <p class="cms-repeatable">TYPO are Giovanni Lami and Leonardo Passanti.</p>
+                                            <p class="cms-repeatable">Analog synths, reel to reel recorders, open
+                                                microphones and samples
                                                 working in a constant mirroring.</p>
-                                            <p>To put yourself into a wide array of choices where all is indispensable
+                                            <p class="cms-repeatable">To put yourself into a wide array of choices where
+                                                all is indispensable
                                                 and all is unuseful, at once. This is the modus operandi. Discomfort
                                                 elements crash on occasional lights and soggy melodies. It's music for
                                                 strangers.</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Mastered by Giuseppe Ielasi</p>
                                                 <p>Released May 15, 2018</p>
                                             </div>
@@ -655,7 +696,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album10">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/hysteresis-V/hysteresis-V.jpeg">
@@ -669,9 +711,12 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/hysteresis-V/hysteresis-V.jpeg">
-                                            <img src="assets/images/releases/hysteresis-V/hysteresis-V-01.jpeg">
-                                            <img src="assets/images/releases/hysteresis-V/hysteresis-V-02.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/hysteresis-V/hysteresis-V.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/hysteresis-V/hysteresis-V-01.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/hysteresis-V/hysteresis-V-02.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -679,13 +724,15 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://nullzone.bandcamp.com/album/hysteresis-v"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2018 C-27</p>
-                                            <p>Recorded live in Giudecca (Venice - Italy), October 25, 2017
-                                            <p>Thanks to BOAT / Cantiere Navale Gruppo Faldis</p>
-                                            <p>An edition of 75 home-dubbed white C27 cassettes with transparent outer
+                                            <p class="cms-repeatable">/2018 C-27</p>
+                                            <p class="cms-repeatable">Recorded live in Giudecca (Venice - Italy),
+                                                October 25, 2017
+                                            <p class="cms-repeatable">Thanks to BOAT / Cantiere Navale Gruppo Faldis</p>
+                                            <p class="cms-repeatable">An edition of 75 home-dubbed white C27 cassettes
+                                                with transparent outer
                                                 j-cards</p>
 
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Side A 13:00<br>
                                                     Side B 13:00
                                                 </p>
@@ -703,7 +750,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album11">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/hysteresis-IV/hysteresis-IV.jpeg">
@@ -717,12 +765,18 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/hysteresis-IV/hysteresis-IV.jpeg">
-                                            <img src="assets/images/releases/hysteresis-IV/hysteresis-IV-01.jpeg">
-                                            <img src="assets/images/releases/hysteresis-IV/hysteresis-IV-02.jpeg">
-                                            <img src="assets/images/releases/hysteresis-IV/hysteresis-IV-03.jpeg">
-                                            <img src="assets/images/releases/hysteresis-IV/hysteresis-IV-04.jpeg">
-                                            <img src="assets/images/releases/hysteresis-IV/hysteresis-IV-05.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/hysteresis-IV/hysteresis-IV.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/hysteresis-IV/hysteresis-IV-01.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/hysteresis-IV/hysteresis-IV-02.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/hysteresis-IV/hysteresis-IV-03.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/hysteresis-IV/hysteresis-IV-04.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/hysteresis-IV/hysteresis-IV-05.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -730,15 +784,17 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://falt.bandcamp.com/album/hysteresis-iv"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2017 - c30</p>
-                                            <p>On the meditation about the arrangement of sound events and layering them
+                                            <p class="cms-repeatable">/2017 - c30</p>
+                                            <p class="cms-repeatable">On the meditation about the arrangement of sound
+                                                events and layering them
                                                 on the timeline. It's like a patina laying on the renewed surface,
                                                 recorded on tape.</p>
-                                            <p>Hysteresis IV is the fourth instalment of Giovanni Lami’s ongoing long
+                                            <p class="cms-repeatable">Hysteresis IV is the fourth instalment of Giovanni
+                                                Lami’s ongoing long
                                                 term project. It’s like a patina laying on the renewed patina, on a
                                                 renewed patina, on the renewed surface, recorded on tape.</p>
-                                            <p>Recorded live in Torino, July 5th 2017</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <p class="cms-repeatable">Recorded live in Torino, July 5th 2017</p>
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Thanks to Lorenzo Abattoir</p>
                                                 <p> A - 12:00<br>
                                                     B - 12:00
@@ -760,7 +816,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album12">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/hysteresis-I/hysteresis-I.jpeg">
@@ -774,8 +831,10 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/hysteresis-I/hysteresis-I.jpeg">
-                                            <img src="assets/images/releases/hysteresis-I/hysteresis-I-01.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/hysteresis-I/hysteresis-I.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/hysteresis-I/hysteresis-I-01.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -783,11 +842,12 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://giovannilami.bandcamp.com/album/hysteresis-i"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2017 - c30</p>
-                                            <p>Hysteresis I is the first part of an ongoing long term project. It’s like
+                                            <p class="cms-repeatable">/2017 - c30</p>
+                                            <p class="cms-repeatable">Hysteresis I is the first part of an ongoing long
+                                                term project. It’s like
                                                 a patina laying on the renewed patina, on a renewed patina, on the
                                                 renewed surface, recorded on tape.</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p> A (14:50) <br>
                                                     B (14:50)
                                                 </p>
@@ -801,8 +861,9 @@
 
                                         <div class="card__text">
                                             <h3>Reviews</h3>
-                                            <h2>Radio-On Berlin / 2018</h2>
-                                            <p>In my temporary dwelling, from my balcony, and looking through the window
+                                            <h2 class="cms-repeatable">Radio-On Berlin / 2018</h2>
+                                            <p class="cms-repeatable">In my temporary dwelling, from my balcony, and
+                                                looking through the window
                                                 as well, I enjoy a view on hills and on the hills behind those hills
                                                 that roll to the South East. Houses stick out from between small patches
                                                 of forest and fields. A small road heads north to Kraków, passes little
@@ -853,7 +914,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album13">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/hysteresis-III/hysteresis-III.jpeg">
@@ -866,8 +928,10 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/hysteresis-III/hysteresis-III.jpeg">
-                                            <img src="assets/images/releases/hysteresis-III/hysteresis-III-01.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/hysteresis-III/hysteresis-III.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/hysteresis-III/hysteresis-III-01.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -875,14 +939,16 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://giovannilami.bandcamp.com/album/hysteresis-iii"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2017 - c30</p>
-                                            <p>On the meditation about the arrangement of sound events and layering them
+                                            <p class="cms-repeatable">/2017 - c30</p>
+                                            <p class="cms-repeatable">On the meditation about the arrangement of sound
+                                                events and layering them
                                                 on the timeline. It's like a patina laying on the renewed surface,
                                                 recorded on tape.</p>
-                                            <p>Hysteresis III is the third instalment of Giovanni Lami’s ongoing long
+                                            <p class="cms-repeatable">Hysteresis III is the third instalment of Giovanni
+                                                Lami’s ongoing long
                                                 term project. It’s like a patina laying on the renewed patina, on a
                                                 renewed patina, on the renewed surface, recorded on tape.</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Recorded live in Valencia, May 13, 2017</p>
                                                 <p>Recorded in Ravenna, January 24, 2017</p>
                                                 <p>Thanks to Edu Comelles</p>
@@ -903,8 +969,9 @@
 
                                         <div class="card__text">
                                             <h3>Reviews</h3>
-                                            <h2>Radio-On Berlin / 2018</h2>
-                                            <p>In my temporary dwelling, from my balcony, and looking through the window
+                                            <h2 class="cms-repeatable">Radio-On Berlin / 2018</h2>
+                                            <p class="cms-repeatable">In my temporary dwelling, from my balcony, and
+                                                looking through the window
                                                 as well, I enjoy a view on hills and on the hills behind those hills
                                                 that roll to the South East. Houses stick out from between small patches
                                                 of forest and fields. A small road heads north to Kraków, passes little
@@ -955,7 +1022,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album14">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/hysteresis-II/hysteresis-II.jpeg">
@@ -969,8 +1037,10 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/hysteresis-II/hysteresis-II.jpeg">
-                                            <img src="assets/images/releases/hysteresis-II/hysteresis-II-01.png">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/hysteresis-II/hysteresis-II.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/hysteresis-II/hysteresis-II-01.png">
                                         </div>
 
                                         <div class="card__text">
@@ -978,11 +1048,13 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://czaszka.bandcamp.com/album/hysteresis-ii"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2017 - c20</p>
-                                            <p>On the meditation about the arrangement of sound events and layering them
+                                            <p class="cms-repeatable">/2017 - c20</p>
+                                            <p class="cms-repeatable">On the meditation about the arrangement of sound
+                                                events and layering them
                                                 on the timeline. It's like a patina laying on the renewed surface,
                                                 recorded on tape.</p>
-                                            <p>Hysteresis II is the second instalment of Giovanni Lami’s ongoing long
+                                            <p class="cms-repeatable">Hysteresis II is the second instalment of Giovanni
+                                                Lami’s ongoing long
                                                 term project, preceding releases on Tutore Burlato (IT) and Soft Error
                                                 (UK). As he explains: “I'm into a new way of concerning reel-to-reel and
                                                 tapes, approaching a field-based work where I play on several sites my
@@ -994,7 +1066,7 @@
                                                 crucial point of this work since I like to be able to do it without any
                                                 trouble, almost everywhere.”</p>
 
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Recorded in Solfatara, Pozzuoli (Naples), April 26, 2017</p>
                                                 <p>Thanks to Renato Grieco and Giulio Nocera</p>
                                                 <p>Artwork by Giulio Nocera</p>
@@ -1004,9 +1076,7 @@
                                                         href="vimeo.com/223753784" target="_blank">video by Giulio
                                                         Nocera</a> capturing the session</p>
                                             </div>
-
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -1015,7 +1085,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album15">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/opale/opale.jpeg">
@@ -1029,18 +1100,22 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/opale/opale.jpeg">
-                                            <img src="assets/images/releases/opale/opale-01.jpeg">
-                                            <img src="assets/images/releases/opale/opale-02.jpeg">
-                                            <img src="assets/images/releases/opale/opale-03.jpeg">
+                                            <img class="cms-repeatable" src="assets/images/releases/opale/opale.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/opale/opale-01.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/opale/opale-02.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/opale/opale-03.jpeg">
                                         </div>
 
                                         <div class="card__text">
                                             <h2 class="item__title">Opale</h2>
                                             <p class="buy txt--minor"><a href="https://www.dinzuartefacts.com/dnz03"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2016 - c-20</p>
-                                            <p>Each side presents a slow build, culminating in a retreat of one source
+                                            <p class="cms-repeatable">/2016 - c-20</p>
+                                            <p class="cms-repeatable">Each side presents a slow build, culminating in a
+                                                retreat of one source
                                                 at the benefit of another. The two pieces also work as one, with a
                                                 gentle segue connecting the sides. Parts of “Secondo Solco” sound like a
                                                 loom, conjuring images of Sleeping Beauty. As the plot begins to
@@ -1048,8 +1123,9 @@
                                                 closing minutes, it’s all hiss, a fairy tale rewritten, a happy ending
                                                 denied. (Richard Allen)
                                             </p>
-                                            <p>Artist Statement</p>
-                                            <p>The research I’m carrying on from years is a sort of investigation of
+                                            <p class="cms-repeatable">Artist Statement</p>
+                                            <p class="cms-repeatable">The research I’m carrying on from years is a sort
+                                                of investigation of
                                                 sounds in-between sounds you can get if you put your focus on small
                                                 sound-areas, details you can reach during the play, far away from the
                                                 simple surface of sound. It's like “explode and explore” an instrument,
@@ -1065,8 +1141,9 @@
 
                                         <div class="card__text">
                                             <h3>Reviews</h3>
-                                            <h2>Cassette Gods / 2016</h2>
-                                            <p>The inaugural Dinzu Artefacts batch – the label an extension of the
+                                            <h2 class="cms-repeatable">Cassette Gods / 2016</h2>
+                                            <p class="cms-repeatable">The inaugural Dinzu Artefacts batch – the label an
+                                                extension of the
                                                 Spring Break Tapes brand (but of course its own thing) – is a monument
                                                 to sound sculpture. Let those words sink in for a second. Giovanni Lami,
                                                 whose Opale consists of two sides, “Primo Solco” and “Secondo Solco,”
@@ -1090,8 +1167,9 @@
                                                 remember it is the tricky bit. Opale is perfect for museum earbud
                                                 accompaniment as you stroll through corridors of modern art. (Ryan
                                                 Masteller)</p>
-                                            <h2>a closer listen / 2016</h2>
-                                            <p>Giovanni Lami‘s Opale delves into pops and clicks, rattles and screeches:
+                                            <h2 class="cms-repeatable">a closer listen / 2016</h2>
+                                            <p class="cms-repeatable">Giovanni Lami‘s Opale delves into pops and clicks,
+                                                rattles and screeches:
                                                 another organic/electronic hybrid that can sound like an old swing or a
                                                 faulty circuit, depending on the time. Each side presents a slow build,
                                                 culminating in a retreat of one source at the benefit of another. The
@@ -1100,16 +1178,17 @@
                                                 Beauty. As the plot begins to thicken, the sounds grow harsher, like the
                                                 soul of the witch. In the closing minutes, it’s all hiss, a fairy tale
                                                 rewritten, a happy ending denied. (Richard Allen)</p>
-                                            <h2><a href="https://beta.mixcloud.com/tabsout/tabs-out-cassette-podcast-episode-96/"
+                                            <h2 class="cms-repeatable"><a
+                                                    href="https://beta.mixcloud.com/tabsout/tabs-out-cassette-podcast-episode-96/"
                                                     target="_blank">Tabs Out / 2016</a></h2>
-                                            <p>Dinzu Artefacts - first batch Art by Joe McKay Look At These Tapes would
+                                            <p class="cms-repeatable">Dinzu Artefacts - first batch Art by Joe McKay
+                                                Look At These Tapes would
                                                 not be doing it's job if it didn't tell you to look at these tapes from
                                                 Dinzu Artefacts' inaugural batch. This offshoot of Spring Break Tapes is
                                                 tackling design with clinical precision, opting for winter-is-coming
                                                 style covers, hygienic layouts, and a logo that made me punch an eagle
                                                 square in it's beak. To be clear - they nailed it.</p>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -1118,7 +1197,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album16">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/bias/bias.jpeg">
@@ -1132,11 +1212,11 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/bias/bias.jpeg">
-                                            <img src="assets/images/releases/bias/bias-01.jpeg">
-                                            <img src="assets/images/releases/bias/bias-02.jpeg">
-                                            <img src="assets/images/releases/bias/bias-03.jpeg">
-                                            <img src="assets/images/releases/bias/bias-04.jpeg">
+                                            <img class="cms-repeatable" src="assets/images/releases/bias/bias.jpeg">
+                                            <img class="cms-repeatable" src="assets/images/releases/bias/bias-01.jpeg">
+                                            <img class="cms-repeatable" src="assets/images/releases/bias/bias-02.jpeg">
+                                            <img class="cms-repeatable" src="assets/images/releases/bias/bias-03.jpeg">
+                                            <img class="cms-repeatable" src="assets/images/releases/bias/bias-04.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -1144,8 +1224,9 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://soundcloud.com/consumer-waste/giovanni-lami-bias-excerpt"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2016 - CD in oversize 7” sleeve</p>
-                                            <p>Through its focus on process and materiality, Bias opens the practice of
+                                            <p class="cms-repeatable">/2016 - CD in oversize 7” sleeve</p>
+                                            <p class="cms-repeatable">Through its focus on process and materiality, Bias
+                                                opens the practice of
                                                 sound ecology beyond the acoustic to consider the audibility of the
                                                 chemical composition of soil. From scraps of muddied media buried across
                                                 three sites in Austria, Greece and Italy, Lami crafts a series of
@@ -1155,8 +1236,9 @@
                                                 risographed booklet featuring accompanying visual works by me and a
                                                 commissioned text by Francesco Bergamo.
                                             </p>
-                                            <p>Artist Statement</p>
-                                            <p>The research I’m carrying on from years is a sort of investigation of
+                                            <p class="cms-repeatable">Artist Statement</p>
+                                            <p class="cms-repeatable">The research I’m carrying on from years is a sort
+                                                of investigation of
                                                 sounds in-between sounds you can get if you put your focus on small
                                                 sound-areas, details you can reach during the play, far away from the
                                                 simple surface of sound. It's like “explode and explore” an instrument,
@@ -1172,8 +1254,9 @@
 
                                         <div class="card__text">
                                             <h3>Reviews</h3>
-                                            <h2>Blow Up / 2016</h2>
-                                            <p>Dopo l'indagine strumentale condotta in [mema verma], Giovanni Lami torna
+                                            <h2 class="cms-repeatable">Blow Up / 2016</h2>
+                                            <p class="cms-repeatable">Dopo l'indagine strumentale condotta in [mema
+                                                verma], Giovanni Lami torna
                                                 a cimentarsi con nastri magnetici e materiali assemblati nell'intorno
                                                 tra analogico e digitale, pubblicando un lavoro di studio sulle
                                                 dinamiche e sugli effetti di decomposizione fisica del suono. La ricerca
@@ -1198,8 +1281,9 @@
                                                 autore, è assimilabile ad un giardino "dove tutto cresce e la maggior
                                                 parte del tempo la si passa a contemplare il cambiamento". (Leandro
                                                 Pisano)</p>
-                                            <h2>a closer listen / 2016</h2>
-                                            <p>Does a physical medium simply contain (or mediate) a work of art, or can
+                                            <h2 class="cms-repeatable">a closer listen / 2016</h2>
+                                            <p class="cms-repeatable">Does a physical medium simply contain (or mediate)
+                                                a work of art, or can
                                                 the medium be a work all its own? Since at least the 1960s and the birth
                                                 of Conceptualism, artists have produced works that go beyond merely
                                                 formal concerns to explore the relationship between materiality and
@@ -1299,8 +1383,9 @@
                                                 such a catharsis, instead foregrounding the sound of the medium in its
                                                 basest form. Its poetics function on a different register, but one still
                                                 rooted deep in a practice of listening. (Joseph Sannicandro)</p>
-                                            <h2>Fluid Radio / 2016</h2>
-                                            <p>Giovanni Lami is an Italian musician previously heard on the shruti box
+                                            <h2 class="cms-repeatable">Fluid Radio / 2016</h2>
+                                            <p class="cms-repeatable">Giovanni Lami is an Italian musician previously
+                                                heard on the shruti box
                                                 study "mema verma" and in the duo Lemures with Enrico Coniglio, among
                                                 many other places. His new work for Consumer Waste, "Bias", involves
                                                 material recorded to magnetic tape and then buried for a while, in a few
@@ -1333,8 +1418,9 @@
                                                 engines fills the room, intermittently highlighted by dull sparks of
                                                 tone and quietly crescendoing rings. This music comes from the earth,
                                                 but doesn’t always remain stuck to it.</p>
-                                            <h2>Sodapop / 2016</h2>
-                                            <p>Forse mai ci è capitato di trattare di un progetto simile a quello che
+                                            <h2 class="cms-repeatable">Sodapop / 2016</h2>
+                                            <p class="cms-repeatable">Forse mai ci è capitato di trattare di un progetto
+                                                simile a quello che
                                                 Giovanni Lami ha elaborato per Bias, dove le registrazioni portano con
                                                 sé tutta una serie di rimandi e associazioni mentali che ci conducono
                                                 assai lontano dal semplice discorso sonoro che costituisce solo una
@@ -1384,8 +1470,9 @@
                                                 gratuita Bias è un work in progress che costringe a porsi interrogativi
                                                 non da poco: più che un disco una macchina per pensare. (Emiliano
                                                 Zanotti)</p>
-                                            <h2>The New Noise / 2016</h2>
-                                            <p>Dopo l’operazione svolta con uno shruti box che ha caratterizzato
+                                            <h2 class="cms-repeatable">The New Noise / 2016</h2>
+                                            <p class="cms-repeatable">Dopo l’operazione svolta con uno shruti box che ha
+                                                caratterizzato
                                                 l’ultimo Mema Verma, Lami torna al maneggiare nastri e al processing. Ne
                                                 ricava questa serie di registrazioni pubblicate da Consumer Waste,
                                                 banalmente definibili come “materiche”, frutto di un’incessante opera di
@@ -1415,8 +1502,9 @@
                                                 è semplice e immediato da comprendere, devo ammettere che questo Bias
                                                 centra l’obiettivo. Credo possa accadere altrettanto per l’ascoltatore
                                                 più curioso.</p>
-                                            <h2>Neural / 2017</h2>
-                                            <p>Pubblicata dall’etichetta inglese Consumer Waste, quest’ultima uscita del
+                                            <h2 class="cms-repeatable">Neural / 2017</h2>
+                                            <p class="cms-repeatable">Pubblicata dall’etichetta inglese Consumer Waste,
+                                                quest’ultima uscita del
                                                 ravennate Giovanni Lami – artista del suono e musicista a suo agio con
                                                 paesaggi sonori e concetti di suono-ecologia – subito ci sorprende per
                                                 l’esplorazione delle potenzialità timbriche dei nastri magnetici. Il
@@ -1447,8 +1535,9 @@
                                                 rappresentazioni: “resti” che “non sono più umani che animali, radici,
                                                 piante, minerali”, rovine della modernità e del decadimento qui voltate
                                                 in una dimensione parallela di suoni. (Aurelio Cianciotta)</p>
-                                            <h2>Chain DLK / 2016</h2>
-                                            <p>Bias is something that could be called as "documentary release" as,
+                                            <h2 class="cms-repeatable">Chain DLK / 2016</h2>
+                                            <p class="cms-repeatable">Bias is something that could be called as
+                                                "documentary release" as,
                                                 instead of being a traditionally composed music, it's a sonic document
                                                 of a physical artifact. The basic material of this release are tapes
                                                 buried to alter their chemical composition so, in a certain perspective,
@@ -1473,8 +1562,9 @@
                                                 culture based on progress could deal with his past and shows the paradox
                                                 that the medium with the higher fidelity is perfect to reproduce noise
                                                 as it was music. An excellent release and a work of art.</p>
-                                            <h2>Rumore / 2016</h2>
-                                            <p>Mentre scrivo Giovanni Lami si accinge a suonare al Transmissions
+                                            <h2 class="cms-repeatable">Rumore / 2016</h2>
+                                            <p class="cms-repeatable">Mentre scrivo Giovanni Lami si accinge a suonare
+                                                al Transmissions
                                                 Festival e al Node. Bias è uscito da quasi 8 mesi ed è un lavoro
                                                 complesso, quindi coraggiosissimo, sulla memoria e sul vuoto: alcuni
                                                 nastri magnetici sono stati sepolti per mesi in diverse condizioni
@@ -1486,8 +1576,9 @@
                                                 di library-music concreta, espressione dell'ambiente naturale, che
                                                 diventa protagonista grazie alle modificazioni che Lami apporta alla
                                                 materia trattata. (Marco Pecorari)</p>
-                                            <h2>Vital Weekly / 2016</h2>
-                                            <p>Here's a new work by Giovanni Lami, a follow up to his LP 'Mema Verma'
+                                            <h2 class="cms-repeatable">Vital Weekly / 2016</h2>
+                                            <p class="cms-repeatable">Here's a new work by Giovanni Lami, a follow up to
+                                                his LP 'Mema Verma'
                                                 (see Vital Weekly 946) and split 7" with Nicola Ratti (see Vital Weekly
                                                 951) and again he offers music with a strong conceptual edge. On his LP
                                                 he used sampled from reeds of a shruti box, and this time around he uses
@@ -1520,8 +1611,9 @@
                                                 back from them, the low resolution of the noise, it all makes up for
                                                 some truly fascinating music. This is an excellent dig — pun intended.
                                                 (FdW)</p>
-                                            <h2>Musica Elettronica / 2016</h2>
-                                            <p>[Abbiamo intervistato il musicista e sound artist Giovanni Lami (Ravenna,
+                                            <h2 class="cms-repeatable">Musica Elettronica / 2016</h2>
+                                            <p class="cms-repeatable">[Abbiamo intervistato il musicista e sound artist
+                                                Giovanni Lami (Ravenna,
                                                 1978) in occasione della pubblicazione del nuovo album Bias per
                                                 l’etichetta inglese Consumer Waste, prevista per il mese di aprile. Il
                                                 lavoro, focalizzato sull’esplorazione delle possibilità timbriche del
@@ -1627,7 +1719,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album17">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/memaverma/memaverma.jpeg">
@@ -1641,11 +1734,16 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/memaverma/memaverma.jpeg">
-                                            <img src="assets/images/releases/memaverma/memaverma-01.png">
-                                            <img src="assets/images/releases/memaverma/memaverma-02.jpeg">
-                                            <img src="assets/images/releases/memaverma/memaverma-03.jpeg">
-                                            <img src="assets/images/releases/memaverma/memaverma-04.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/memaverma/memaverma.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/memaverma/memaverma-01.png">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/memaverma/memaverma-02.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/memaverma/memaverma-03.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/memaverma/memaverma-04.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -1653,15 +1751,16 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://kohlhaas.bandcamp.com/album/mema-verma"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2014</p>
-                                            <p>मेम वेर्म [mema verma] is the final step of a study about an indian
+                                            <p class="cms-repeatable">/2014</p>
+                                            <p class="cms-repeatable">मेम वेर्म [mema verma] is the final step of a
+                                                study about an indian
                                                 shruti box G (low) tuned, mostly used without emitting any note (as in
                                                 the first two tracks, [kīṭa gīta] and [sautāceta]), sampling and
                                                 processing the breaths, whistles and noise produced by the reeds. The
                                                 third track, [annīgā śūnyatā], is the only one in which the shruti is
                                                 played in a more standard way, as well as its sound was recorded through
                                                 a set of very old mid-range speakers, later sampled and processed.</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Limited edition 12’’ LP</p>
                                                 <p>Mastered by Giuseppe Ielasi</p>
                                                 <p>Artwork by <a href="https://www.facebook.com/osservaidettagli"
@@ -1674,8 +1773,9 @@
 
                                         <div class="card__text">
                                             <h3>Reviews</h3>
-                                            <h2>The New Noise / 2014</h2>
-                                            <p>Esteriormente e interiormente ispirato alla cultura indiana, [mema verma]
+                                            <h2 class="cms-repeatable">The New Noise / 2014</h2>
+                                            <p class="cms-repeatable">Esteriormente e interiormente ispirato alla
+                                                cultura indiana, [mema verma]
                                                 di Giovanni Lami si presenta subito – tramite i suoni/non-suoni dello
                                                 shruti box – come un viaggio trascendentale e spirituale verso orizzonti
                                                 sconosciuti. Composto e registrato nella primavera del 2011, mema verma
@@ -1741,8 +1841,9 @@
                                                 avere una fine anche dopo la sua conclusione. [mema verma] è già rimasto
                                                 chiuso in un cassetto per ben due anni: non merita di rimanere là dentro
                                                 un secondo di più. (Laura Misuraca)</p>
-                                            <h2>a closer listen / 2014</h2>
-                                            <p>Utilizing unintentional and incidental sounds produced with a shruti box,
+                                            <h2 class="cms-repeatable">a closer listen / 2014</h2>
+                                            <p class="cms-repeatable">Utilizing unintentional and incidental sounds
+                                                produced with a shruti box,
                                                 the latest solo work from Giovanni Lami is conceptually coherent and
                                                 carefully arranged. In the past, we’ve covered his work as half of
                                                 Terrapin (with Shaun McAlpine) and Lemures (with Enrico Coniglio), as
@@ -1822,8 +1923,9 @@
                                                 Designed by DEADMEAT and screen-printed by CORPOC, the artwork will give
                                                 you something nice to puzzle over while getting lost in Giovanni Lami’s
                                                 most personal work yet. (Joseph Sannicandro)</p>
-                                            <h2>SentireAscoltare / 2014</h2>
-                                            <p>[mema verma] è il nuovo lavoro di Giovanni Lami, compositore del giro
+                                            <h2 class="cms-repeatable">SentireAscoltare / 2014</h2>
+                                            <p class="cms-repeatable">[mema verma] è il nuovo lavoro di Giovanni Lami,
+                                                compositore del giro
                                                 AIPS e già noto da queste parti per il lavoro come Terrapin in coppia
                                                 con l’americano Shaun McAlpine (uscito per Fratto9). Ora Lami torna con
                                                 un lavoro particolare, edito in vinile limitato a 300 copie e
@@ -1834,8 +1936,9 @@
                                                 droning (e)statico. L’album, il cui mastering è opera di Giuseppe
                                                 Ielasi, uscirà a fine maggio per Kohlhaas e SENTIREASCOLTARE ve lo offre
                                                 in anteprima nella pagina dedicata. (Stefano Pifferi)</p>
-                                            <h2>Sound and Silence / 2014</h2>
-                                            <p>La busta che racchiude questo vinile fa pensare a Keiji Haino, seppure il
+                                            <h2 class="cms-repeatable">Sound and Silence / 2014</h2>
+                                            <p class="cms-repeatable">La busta che racchiude questo vinile fa pensare a
+                                                Keiji Haino, seppure il
                                                 bianco latte dello sfondo non sia proprio usuale nella sua produzione,
                                                 ma le note che accompagnano il disco mettono presto le cose nella giusta
                                                 luce: il bel geroglifico che si lascia ammirare non è affatto in
@@ -1866,8 +1969,9 @@
                                                 dell'aspetto esteriore. Il risultato è un LP diretto sia ai
                                                 collezionisti di vinile sia agli ascoltatori particolarmente avventurosi
                                                 e raffinati. Chi ha buon orecchie ne tragga le conseguenze.</p>
-                                            <h2>Carnage news / 2014</h2>
-                                            <p>Essenziale, circoscritto, analitico, concettuale, pura forma acustica.
+                                            <h2 class="cms-repeatable">Carnage news / 2014</h2>
+                                            <p class="cms-repeatable">Essenziale, circoscritto, analitico, concettuale,
+                                                pura forma acustica.
                                                 Giovanni Lami dedica un intero studio all’utilizzo di un solo strumento:
                                                 “uno shruti box con intonazione più bassa rispetto ai tradizionali
                                                 indiani è principalmente usato senza emettere alcuna nota, ma
@@ -1904,8 +2008,9 @@
                                                 retaggio, un’eredità e una maturità che ognuno coltiva in maniera
                                                 propria, in barba al cosiddetto “pensiero collettivo”. Insomma, propongo
                                                 l’invito: “ascolta questo”. (Riccardo Gorone)</p>
-                                            <h2>Rumore / 2014</h2>
-                                            <p>[...] E, giusto per ribadire, spostandoci nella medesima direzione ma
+                                            <h2 class="cms-repeatable">Rumore / 2014</h2>
+                                            <p class="cms-repeatable">[...] E, giusto per ribadire, spostandoci nella
+                                                medesima direzione ma
                                                 passando dall'asse temporale a quello spaziale: persistiamo nella scelta
                                                 di field sonoro e attitudinale di voler stare con i musicisti
                                                 post-salgariani che stanno in compagnia delle Indie piuttosto che
@@ -1916,8 +2021,9 @@
                                                 convenzionali legate ad uno strumento indiano, lo shruti-box, e allo
                                                 spaesamento acustico da esse prodotte: un disco ostico ma anche gnostico
                                                 (semicit.) che proprio per questo ci piace. (Marco Pecorari)</p>
-                                            <h2>Blow Up / 2014</h2>
-                                            <p>Costruito come un lavoro di indagine acustica attorno ad uno strumento
+                                            <h2 class="cms-repeatable">Blow Up / 2014</h2>
+                                            <p class="cms-repeatable">Costruito come un lavoro di indagine acustica
+                                                attorno ad uno strumento
                                                 unico, processato digitalmente, [mema verma] è la testimonianza
                                                 dell'immersione dell'autore in un continuum in cui il suono assume
                                                 molteplici declinazioni nella scala di gradazione tra pieno e vuoto
@@ -1950,7 +2056,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album18">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/crimini-d-odio/crimini-d-odio.jpeg">
@@ -1965,7 +2072,8 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/crimini-d-odio/crimini-d-odio.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/crimini-d-odio/crimini-d-odio.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -1973,17 +2081,20 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://www.discogs.com/it/release/7741802-Mise-En-Abyme-Crimini-dOdio"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2015 - C50</p>
-                                            <p>Mise En Abyme is the new project by Cristian Naldi (already in FulKanelli
+                                            <p class="cms-repeatable">/2015 - C50</p>
+                                            <p class="cms-repeatable">Mise En Abyme is the new project by Cristian Naldi
+                                                (already in FulKanelli
                                                 and Ronin) and Giovanni Lami.</p>
-                                            <p>Two different backgrounds and attitudes to create something new, one and
+                                            <p class="cms-repeatable">Two different backgrounds and attitudes to create
+                                                something new, one and
                                                 constantly evolving.</p>
-                                            <p>From French [miz‿ɑ̃n‿abim] = "Put within the infinite”, the project is
+                                            <p class="cms-repeatable">From French [miz‿ɑ̃n‿abim] = "Put within the
+                                                infinite”, the project is
                                                 inspired by the technique used in cinema, visual arts and literature,
                                                 where one image contains a smaller copy of itself, potentially repeating
                                                 forever. In Mise En Abyme’s music this creates loops and melody
                                                 fragments that stratify into complex compositions.</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Black cassette limited to 100 copies</p>
                                             </div>
                                         </div>
@@ -1995,7 +2106,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album19">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/ratti-lami/ratti-lami.png">
@@ -2009,9 +2121,12 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/ratti-lami/ratti-lami.png">
-                                            <img src="assets/images/releases/ratti-lami/ratti-lami-01.jpeg">
-                                            <img src="assets/images/releases/ratti-lami/ratti-lami-02.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/ratti-lami/ratti-lami.png">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/ratti-lami/ratti-lami-01.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/ratti-lami/ratti-lami-02.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -2019,17 +2134,19 @@
                                             <p class="buy txt--minor"><a
                                                     href="http://www.grannyrecords.org/work/lami-ratti/"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2014</p>
-                                            <p>Granny13 opens with <a href="https://www.nicolaratti.com/"
-                                                    target="_blank">Nicola Ratti</a>'s 'Odd Doubt'. With the use of a
+                                            <p class="cms-repeatable">/2014</p>
+                                            <p class="cms-repeatable">Granny13 opens with <a
+                                                    href="https://www.nicolaratti.com/" target="_blank">Nicola
+                                                    Ratti</a>'s 'Odd Doubt'. With the use of a
                                                 modular system and tape loops, a broken rhythm is obtained by
                                                 parallelism between single sound signals as LFO one or processed tapes.
                                             </p>
-                                            <p>On the second side, Giovanni Lami's 'Johnny Leech' is made with a small
+                                            <p class="cms-repeatable">On the second side, Giovanni Lami's 'Johnny Leech'
+                                                is made with a small
                                                 bunch of equipment, just a chaotic hand-made synth (cacophonator) and a
                                                 memoryman, working mainly on static electricity and leakage current in
                                                 the synth used without any kind of power supply.</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Mastered by Giuseppe Ielasi</p>
                                                 <p>Artwork by Opora</p>
                                                 <p>Cut at SST</p>
@@ -2039,16 +2156,18 @@
 
                                         <div class="card__text">
                                             <h3>Reviews</h3>
-                                            <h2>The Wire / 2014</h2>
-                                            <p>Two Italian musicians share a split single of glitchy fun and everyone
+                                            <h2 class="cms-repeatable">The Wire / 2014</h2>
+                                            <p class="cms-repeatable">Two Italian musicians share a split single of
+                                                glitchy fun and everyone
                                                 goes some happy. Lami’s piece uses a defective unplugged synthesizer to
                                                 make huzzing chitters that have a kind of rhythm in spots. Ratti’s
                                                 contribution is a bit more structured – it sounds like a record of
                                                 accordion miniatures broken into pieces, then glued back together with
                                                 little pieces of felt stuck onto it. Which would definitely be a pretty
                                                 hep thing to hear.</p>
-                                            <h2>Textura / 2014</h2>
-                                            <p>Some releases qualify as art objects as much as musical collections, a
+                                            <h2 class="cms-repeatable">Textura / 2014</h2>
+                                            <p class="cms-repeatable">Some releases qualify as art objects as much as
+                                                musical collections, a
                                                 case in point this recent seven-inch vinyl outing featuring material by
                                                 Nicola Ratti on one side and Giovanni Lami on the other. That shouldn't
                                                 be interpreted to mean that the musical content isn't worthy of one's
@@ -2078,8 +2197,9 @@
                                                 it gives the impression of being an excerpt from a larger sound art
                                                 work. Here's a release where the abstract nature of the musical content
                                                 matches its visual presentation.</p>
-                                            <h2>Vital Weekly 951 / 2014</h2>
-                                            <p>Granny Records is from Greece, but the two musicians here are from Italy,
+                                            <h2 class="cms-repeatable">Vital Weekly 951 / 2014</h2>
+                                            <p class="cms-repeatable">Granny Records is from Greece, but the two
+                                                musicians here are from Italy,
                                                 of which I don't I heard from Giovanni Lami before. His piece is called
                                                 'Johnny Leech' and he uses a hand-made synth known as the cacophonator
                                                 and a memory man (a delay machine), 'working mainly on static
@@ -2104,7 +2224,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album20">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/WMfY/WMfY.jpeg">
@@ -2118,8 +2239,8 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/WMfY/WMfY.jpeg">
-                                            <img src="assets/images/releases/WMfY/WMfY-01.jpeg">
+                                            <img class="cms-repeatable" src="assets/images/releases/WMfY/WMfY.jpeg">
+                                            <img class="cms-repeatable" src="assets/images/releases/WMfY/WMfY-01.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -2127,22 +2248,26 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://audiogourmet.bandcamp.com/album/wmfy" target="_blank">
                                                     Listen and buy here</a></p>
-                                            <p>/2012</p>
-                                            <p>WMfY stands for Weird Music For Yoga and whilst at first glance seeming
+                                            <p class="cms-repeatable">/2012</p>
+                                            <p class="cms-repeatable">WMfY stands for Weird Music For Yoga and whilst at
+                                                first glance seeming
                                                 conceptually odd, it is in fact quite simple. It is music composed for a
                                                 yoga practice that Giovanni is performing in yoga schools.</p>
-                                            <p>It's "weird" because it is not related in any way to the kind of music
+                                            <p class="cms-repeatable">It's "weird" because it is not related in any way
+                                                to the kind of music
                                                 you would normally associated with yoga, such as "new age" or "ethnic"
                                                 sounds. Instead, Giovanni's take on it treads a darker path than what
                                                 you'd normally relate to yoga and meditation.</p>
-                                            <p>It was performed using lots of sound sources and centered around a
+                                            <p class="cms-repeatable">It was performed using lots of sound sources and
+                                                centered around a
                                                 laptop. The sound pallette includes acoustic instruments such as a
                                                 shruti box, two singing bowls, a kalimba processed through contact mics
                                                 or dynamic mics, some "noise boxes" (hand made boxes made of different
                                                 materials with a small speaker inside, placed around the room and
                                                 controlled through DAW), analog effects and a mixer used to control each
                                                 track.</p>
-                                            <p>This small work is compiled specifically for Audio Gourmet and fits
+                                            <p class="cms-repeatable">This small work is compiled specifically for Audio
+                                                Gourmet and fits
                                                 perfectly with our original concept of fifteen minute EPs; it's not a
                                                 fraction over or under fifteen minutes. Normally when Giovanni performs
                                                 this music for the practice of yoga, everything is longer and more
@@ -2154,17 +2279,19 @@
                                                 strong in some way. Perhaps they could be referred to mantras if you
                                                 prefer although Giovanni prefers to distance himself from the word,
                                                 instead calling them 'cycles'.</p>
-                                            <p>The work is best listened to at mid/low volume without headphones if
+                                            <p class="cms-repeatable">The work is best listened to at mid/low volume
+                                                without headphones if
                                                 possible, as this is the intended setting that the artist recommends for
                                                 the best response.</p>
-                                            <p>So whilst this EP could be deemed too short for the practice of yoga
+                                            <p class="cms-repeatable">So whilst this EP could be deemed too short for
+                                                the practice of yoga
                                                 itself, Giovanni Lami has cleverly woven in the capacity for them to be
                                                 transformed into 'cycles' that are suitable for yoga sessions in the
                                                 form of loops.
                                                 Listened to in their standard form, as an Audio Gourmet EP, it is indeed
                                                 weird music for yoga since the period of relaxation is over all too
                                                 soon...</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Cover and tracks pictures by Mustafa Sabbagh</p>
                                             </div>
                                         </div>
@@ -2176,7 +2303,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album21">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/in-sirenis/in-sirenis.jpeg">
@@ -2190,11 +2318,16 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/in-sirenis/in-sirenis.jpeg">
-                                            <img src="assets/images/releases/in-sirenis/in-sirenis-01.jpeg">
-                                            <img src="assets/images/releases/in-sirenis/in-sirenis-02.jpeg">
-                                            <img src="assets/images/releases/in-sirenis/in-sirenis-03.jpeg">
-                                            <img src="assets/images/releases/in-sirenis/in-sirenis-04.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/in-sirenis/in-sirenis.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/in-sirenis/in-sirenis-01.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/in-sirenis/in-sirenis-02.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/in-sirenis/in-sirenis-03.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/in-sirenis/in-sirenis-04.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -2202,24 +2335,27 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://www.soundohm.com/product/in-sirenis" target="_blank">
                                                     Listen and buy here</a></p>
-                                            <p>/2012</p>
-                                            <p>Siamo spesso portati a considerare “rumore” tutti i suoni che
+                                            <p class="cms-repeatable">/2012</p>
+                                            <p class="cms-repeatable">Siamo spesso portati a considerare “rumore” tutti
+                                                i suoni che
                                                 quotidianamente ci circondano, ma l'idea di un paesaggio naturale
                                                 incontaminato, o di eventi sonori puntiformi isolati dal contesto è
                                                 irrealizzabile ed innegabilmente limitante; tutto ciò che è artificiale
                                                 è ormai parte integrante del paesaggio visivo e sonoro contemporaneo, a
                                                 volte quasi un suo sinonimo.</p>
-                                            <p>Nell’area portuale di Ravenna zone ampiamente industrializzate
+                                            <p class="cms-repeatable">Nell’area portuale di Ravenna zone ampiamente
+                                                industrializzate
                                                 intersecano ampi specchi d'acqua, l'attività umana, la movimentazione
                                                 delle merci e delle navi, l'antropizzazione in generale, affiancano zone
                                                 umide protette.</p>
-                                            <p>Il progetto proporrà questi suoni all'interno della città (una città
+                                            <p class="cms-repeatable">Il progetto proporrà questi suoni all'interno
+                                                della città (una città
                                                 fisicamente distante), completamente decontestualizzati da una visione
                                                 che permetta di associarli a qualcosa di preciso, e parzialmente
                                                 processati, accompagnando l'ascoltatore all'interno di una realtà spesso
                                                 sconosciuta ai cittadini e mai affrontata attraverso il suo paesaggio
                                                 sonoro. (Roberto Barbanti)</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Mastered by Giuseppe Ielasi</p>
                                                 <p>Artwork by Emilio Macchia</p>
                                                 <p>Printed handlewithcare.de | cut: 45rps at SSL</p>
@@ -2232,8 +2368,9 @@
 
                                         <div class="card__text">
                                             <h3>Reviews</h3>
-                                            <h2>a closer listen / 2012</h2>
-                                            <p>When we think of field recordings, we typically think of nature: streams,
+                                            <h2 class="cms-repeatable">a closer listen / 2012</h2>
+                                            <p class="cms-repeatable">When we think of field recordings, we typically
+                                                think of nature: streams,
                                                 birds, farms and the like. But we don’t often think of the sounds
                                                 surrounding nature, especially the intrusions of pedestrians and
                                                 machinery. A jet may pass overhead, or a factory may be recorded for its
@@ -2280,7 +2417,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album22">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/killing-h-f-harlow/killing-h-f-harlow.jpeg">
@@ -2294,11 +2432,11 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img
+                                            <img class="cms-repeatable"
                                                 src="assets/images/releases/killing-h-f-harlow/killing-h-f-harlow.jpeg">
-                                            <img
+                                            <img class="cms-repeatable"
                                                 src="assets/images/releases/killing-h-f-harlow/killing-h-f-harlow-01.jpeg">
-                                            <img
+                                            <img class="cms-repeatable"
                                                 src="assets/images/releases/killing-h-f-harlow/killing-h-f-harlow-02.jpeg">
                                         </div>
 
@@ -2307,13 +2445,15 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://fratto9.bandcamp.com/album/killing-h-f-harlow"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2012</p>
-                                            <p>w/ Shaun McAlpine as Terrapin</p>
-                                            <p>This work comes from some recording sessions in Giovanni’s Studio. Later
+                                            <p class="cms-repeatable">/2012</p>
+                                            <p class="cms-repeatable">w/ Shaun McAlpine as Terrapin</p>
+                                            <p class="cms-repeatable">This work comes from some recording sessions in
+                                                Giovanni’s Studio. Later
                                                 subtlety edited without any overdubs, just choosing the most suitable
                                                 parts, noticing something evolve from the session, forming a solid
                                                 arrangement.</p>
-                                            <p>The fundamental idea behind the project is leading people against
+                                            <p class="cms-repeatable">The fundamental idea behind the project is leading
+                                                people against
                                                 vivisection, holding an historical vivisectionist in psychology, Harry
                                                 Frederick Harlow, as example of brutality, anthropocentrism, speciesism
                                                 and destructive practices against animals; in 50's and 60's conducted
@@ -2322,8 +2462,9 @@
                                                 assumed initially that 12 months of isolation would not produce any
                                                 additional decrement. This assumption proved to be false; 12 months of
                                                 isolation almost obliterated the animals socially… (1965)"</p>
-                                            <p>Keeping these issues in mind through out the project and beyond.</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <p class="cms-repeatable">Keeping these issues in mind through out the
+                                                project and beyond.</p>
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Mastered by Giuseppe Ielasi</p>
                                                 <p>Released by Fratto9 (fratto018)</p>
                                             </div>
@@ -2331,8 +2472,9 @@
 
                                         <div class="card__text">
                                             <h3>Reviews</h3>
-                                            <h2>SentireAscoltare / 2012</h2>
-                                            <p>È introdotto dal lungo drone di A Death A Day/Intro, Killing HF Harlow,
+                                            <h2 class="cms-repeatable">SentireAscoltare / 2012</h2>
+                                            <p class="cms-repeatable">È introdotto dal lungo drone di A Death A
+                                                Day/Intro, Killing HF Harlow,
                                                 l’esordio di Terrapin per la interessantissima collana Microcosmos della
                                                 Fratto9. Incentrato su una sorta di concept sulla vivisezione e ispirato
                                                 alle malefatte compiute sui macachi dallo psicologo americano Harry
@@ -2353,8 +2495,9 @@
                                                 passione animalista e anti-vivisezione oltre che da una ottima ricerca
                                                 sui suoni che rende al meglio la forte idea concettuale di base.
                                                 (Stefano Pifferi)</p>
-                                            <h2>a closer listen / 2012</h2>
-                                            <p>Vivisection would have been too good a fate for HF Harlow, whose
+                                            <h2 class="cms-repeatable">a closer listen / 2012</h2>
+                                            <p class="cms-repeatable">Vivisection would have been too good a fate for HF
+                                                Harlow, whose
                                                 isolationist experiments with Rhesus monkeys may have singlehandedly
                                                 inspired the animal rights movement. If Planet of the Apes were to
                                                 become real, he’d be the first to go. Harlow’s experiments are the
@@ -2391,8 +2534,9 @@
                                                 disgraced doctor, cast out by the world, experienced a different brand
                                                 of isolationism before his death, and one might posit that an inevitable
                                                 karma came into play. (Richard Allen)</p>
-                                            <h2>Sodapop / 2012</h2>
-                                            <p>Devo ammettere che all'inizio avevo sottovalutato questo disco, infatti
+                                            <h2 class="cms-repeatable">Sodapop / 2012</h2>
+                                            <p class="cms-repeatable">Devo ammettere che all'inizio avevo sottovalutato
+                                                questo disco, infatti
                                                 si tratta di un lavoro molto calibrato e subito mi ero perso nella parte
                                                 tecnica, notando che Giovanni Lami e Shaun McAlpine hanno fatto un gran
                                                 lavoro di processo dei suoni, ma quello che è più notevole è che sono
@@ -2422,8 +2566,9 @@
                                                 senza troppa fretta di arrivare al climax del pezzo, per un disco con
                                                 poche melodie che comunque riescono ad essere efficaci. (Andrea
                                                 Ferraris)</p>
-                                            <h2>The New Noise / 2012</h2>
-                                            <p>Nel riprendere un tema animalista, i due Terrapin sembrano quasi
+                                            <h2 class="cms-repeatable">The New Noise / 2012</h2>
+                                            <p class="cms-repeatable">Nel riprendere un tema animalista, i due Terrapin
+                                                sembrano quasi
                                                 riallacciarsi alla vecchia tradizione industrial: Harlow era uno
                                                 psicologo che utilizzava scimmie per i suoi esperimenti, separandole
                                                 dalla madre subito dopo la nascita, allo scopo di vedere di che cosa
@@ -2450,8 +2595,9 @@
                                                 possano proseguire la collaborazione, perché la stoffa c’è. Nota a
                                                 margine: ancora un grande lavoro di packaging a firma Fratto9. (Fabrizio
                                                 Garau)</p>
-                                            <h2>Ondarock / 2012</h2>
-                                            <p>Curate nel concept grafico e sonoro, le uscite di fRaTto9 uNdeR tHE sky
+                                            <h2 class="cms-repeatable">Ondarock / 2012</h2>
+                                            <p class="cms-repeatable">Curate nel concept grafico e sonoro, le uscite di
+                                                fRaTto9 uNdeR tHE sky
                                                 si stanno affermando come vero e proprio standard produttivo nell'ambito
                                                 del mercato delle piccole label nostrane. Non fa eccezione alla regola
                                                 questo "Killing H.F. Harlow" di Terrapin, progetto impro-elettroacustico
@@ -2472,8 +2618,9 @@
                                                 morbosità del tutto. E, mentre i pezzi scorrono, sembra davvero di stare
                                                 in un vero e proprio laboratorio - se ne percepiscono l'isolamento e
                                                 l'assenza di umanità. (Antonio Ciarletta)</p>
-                                            <h2>etherreal / 2012</h2>
-                                            <p>La scène italienne électro-acoustique, régulièrement évoquée ici, étant
+                                            <h2 class="cms-repeatable">etherreal / 2012</h2>
+                                            <p class="cms-repeatable">La scène italienne électro-acoustique,
+                                                régulièrement évoquée ici, étant
                                                 un petit monde, c’est assez logiquement qu’on peut tracer des liens
                                                 entre ses différents intervenants. Ainsi, au moment d’entamer l’écoute
                                                 du premier disque de Terrapin, on se rend compte que le duo se constitue
@@ -2496,8 +2643,9 @@
                                                 d’apprendre à connaître Terrapin, c’est à un prochain disque qu’on
                                                 renvoie une véritable appréciation du travail des Italiens. (François
                                                 Bousquet)</p>
-                                            <h2>oltre il suono / 2012</h2>
-                                            <p>Brevissimo album della durata di poco più di 20 minuti, costituito da
+                                            <h2 class="cms-repeatable">oltre il suono / 2012</h2>
+                                            <p class="cms-repeatable">Brevissimo album della durata di poco più di 20
+                                                minuti, costituito da
                                                 porzioni di registrazioni live selezionate e opportunamente
                                                 “riassemblate” senza ulteriori sovraincisioni di sorta. A partire da un
                                                 “concept” che suggerisce una riflessione sul tema della vivisezione
@@ -2521,8 +2669,9 @@
                                                 drone-dark-ambient-elettronica-sperimentale, che avrei soltanto
                                                 desiderato essere di durata un po’ più “generosa”. (Giuseppe Verticchio)
                                             </p>
-                                            <h2>Progress Report / 2012</h2>
-                                            <p>On Fratto9, a label with close connections to the Italian experimental
+                                            <h2 class="cms-repeatable">Progress Report / 2012</h2>
+                                            <p class="cms-repeatable">On Fratto9, a label with close connections to the
+                                                Italian experimental
                                                 label Boring Machines duo Terrapin has brought out Killing HF Harlow.
                                                 Harlow was an American psychologist doing devastating experiments with
                                                 animals investigating effects on their social behavior. Possibly the
@@ -2555,7 +2704,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album23">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/split-c-40/split-c-40.png">
@@ -2568,10 +2718,14 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/split-c-40/split-c-40.png">
-                                            <img src="assets/images/releases/split-c-40/split-c-40-01.png">
-                                            <img src="assets/images/releases/split-c-40/split-c-40-02.jpeg">
-                                            <img src="assets/images/releases/split-c-40/split-c-40-03.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/split-c-40/split-c-40.png">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/split-c-40/split-c-40-01.png">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/split-c-40/split-c-40-02.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/split-c-40/split-c-40-03.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -2579,10 +2733,10 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://soundcloud.com/giovannilami/sets/split-felt-6-sublamp-giovanni"
                                                     target="_blank">Listen here</a></p>
-                                            <p>/2012</p>
-                                            <p>Sublamp / Giovanni Lami</p>
-                                            <p>SPLIT (Felt 6)</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <p class="cms-repeatable">/2012</p>
+                                            <p class="cms-repeatable">Sublamp / Giovanni Lami</p>
+                                            <p class="cms-repeatable">SPLIT (Felt 6)</p>
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Edition of 50 hand-numbered ferrik cassettes</p>
                                                 <p>Released 7 December, 2012</p>
                                             </div>
@@ -2590,8 +2744,9 @@
 
                                         <div class="card__text">
                                             <h3>Reviews</h3>
-                                            <h2>Beach Sloth / 2012</h2>
-                                            <p>Time is transfigured on this infinity-based split. Each artist focuses on
+                                            <h2 class="cms-repeatable">Beach Sloth / 2012</h2>
+                                            <p class="cms-repeatable">Time is transfigured on this infinity-based split.
+                                                Each artist focuses on
                                                 the stopping of time. Movement of both of these pieces is barely
                                                 perceivable. What happens is the entire cloud of sound hovers. After
                                                 each repetition the music gets marginally closer and closer to a
@@ -2623,7 +2778,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album24">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/lemures-ep/lemures.jpeg">
@@ -2637,19 +2793,22 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/lemures-ep/lemures.jpeg">
-                                            <img src="assets/images/releases/lemures-ep/lemures-01.png">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/lemures-ep/lemures.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/lemures-ep/lemures-01.png">
                                         </div>
 
                                         <div class="card__text">
                                             <h2 class="item__title">Lemures / EP</h2>
                                             <p class="buy txt--minor"><a href="https://cronica.bandcamp.com/album/EP"
                                                     target="_blank">Listen and free download here</a></p>
-                                            <p>/2014</p>
-                                            <p>Crónica 082~2013</p>
-                                            <p>The EP is part of a diptych with the LP “Lemuria”.</p>
-                                            <p>Lemures animas dixere silentum. Ov. F. 5, 483.</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <p class="cms-repeatable">/2014</p>
+                                            <p class="cms-repeatable">Crónica 082~2013</p>
+                                            <p class="cms-repeatable">The EP is part of a diptych with the LP “Lemuria”.
+                                            </p>
+                                            <p class="cms-repeatable">Lemures animas dixere silentum. Ov. F. 5, 483.</p>
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Composed by Giovanni Lami and Enrico Coniglio</p>
                                                 <p>Mastered by Miguel Carvalhais</p>
                                                 <p>Illustration by <a href="https://www.facebook.com/osservaidettagli"
@@ -2665,7 +2824,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album25">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/lemures-lemuria/lemures-lemuria.jpeg">
@@ -2679,11 +2839,16 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/lemures-lemuria/lemures-lemuria.jpeg">
-                                            <img src="assets/images/releases/lemures-lemuria/lemures-lemuria-01.jpeg">
-                                            <img src="assets/images/releases/lemures-lemuria/lemures-lemuria-02.jpeg">
-                                            <img src="assets/images/releases/lemures-lemuria/lemures-lemuria-03.jpeg">
-                                            <img src="assets/images/releases/lemures-lemuria/lemures-lemuria-04.png">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/lemures-lemuria/lemures-lemuria.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/lemures-lemuria/lemures-lemuria-01.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/lemures-lemuria/lemures-lemuria-02.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/lemures-lemuria/lemures-lemuria-03.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/lemures-lemuria/lemures-lemuria-04.png">
                                         </div>
 
                                         <div class="card__text">
@@ -2691,18 +2856,20 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://cronica.bandcamp.com/album/lemuria"
                                                     target="_blank">Listen and buy here</a></p>
-                                            <p>/2013</p>
-                                            <p>Lemures animas dixere silentum. Ov. F. 5, 483.</p>
-                                            <p>The Lemuria was a feast in the religion of ancient Rome during which the
+                                            <p class="cms-repeatable">/2013</p>
+                                            <p class="cms-repeatable">Lemures animas dixere silentum. Ov. F. 5, 483.</p>
+                                            <p class="cms-repeatable">The Lemuria was a feast in the religion of ancient
+                                                Rome during which the
                                                 Romans performed rites to exorcise the malevolent and fearful ghosts of
                                                 the dead from their homes. The unwholesome spectres of the restless
                                                 dead, the Lemures. (wiki)</p>
-                                            <p>"The description, ultimately, of a “mental landscape”, as defined in the
+                                            <p class="cms-repeatable">"The description, ultimately, of a “mental
+                                                landscape”, as defined in the
                                                 founding manifesto of the Lemures project, in which the complex
                                                 interplay between subject and sound objects becomes a complex game of
                                                 associations, reflections and reverberations, suspended between a
                                                 denotative approach and a non-linear narrative." (Leandro Pisano)</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Just 100 copies on 180g black vinyl LP12″ 33rpm</p>
                                                 <p>Composed by Giovanni Lami and Enrico Coniglio</p>
                                                 <p>Mastered by Miguel Carvalhais</p>
@@ -2719,7 +2886,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album26">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/split-c-20/split-c-20.png">
@@ -2732,18 +2900,20 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/split-c-20/split-c-20.png">
-                                            <img src="assets/images/releases/split-c-20/split-c-20-01.png">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/split-c-20/split-c-20.png">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/split-c-20/split-c-20-01.png">
                                         </div>
                                         <div class="card__text">
                                             <h2 class="item__title">split C-20</h2>
                                             <p class="buy txt--minor"><a
                                                     href="https://soundcloud.com/giovannilami/a-side?in=giovannilami/sets/split-felt12"
                                                     target="_blank">Listen here</a></p>
-                                            <p>/2013</p>
-                                            <p>Giovanni Lami & Kenny The Chimp</p>
-                                            <p>Split (Felt 12)</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <p class="cms-repeatable">/2013</p>
+                                            <p class="cms-repeatable">Giovanni Lami & Kenny The Chimp</p>
+                                            <p class="cms-repeatable">Split (Felt 12)</p>
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Edition of 50 home-dubbed ferrik-cassettes</p>
                                                 <p>Released October 24, 2013</p>
                                             </div>
@@ -2756,7 +2926,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album27">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/i-misteri/i-misteri.jpeg">
@@ -2770,8 +2941,10 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/i-misteri/i-misteri.jpeg">
-                                            <img src="assets/images/releases/i-misteri/i-misteri-01.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/i-misteri/i-misteri.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/i-misteri/i-misteri-01.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -2779,8 +2952,9 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://impulsivehabitat.com/releases/ihab051.htm"
                                                     target="_blank">Listen and free download here</a></p>
-                                            <p>/2012</p>
-                                            <p>This group of pure field recordings were taken in April 2011 during
+                                            <p class="cms-repeatable">/2012</p>
+                                            <p class="cms-repeatable">This group of pure field recordings were taken in
+                                                April 2011 during
                                                 Easter processions in Sicily. Easter week in Sicily is from ancient time
                                                 a moment of evocative festivals and parades in many cities and villages,
                                                 that recall the death of Christ. The most famous procession is in
@@ -2791,7 +2965,8 @@
                                                 the cross and are all made by the various local guilds. Thousands of
                                                 Sicilians line the streets awaiting the arrival of the Virgin Mary "in
                                                 search" of her son.</p>
-                                            <p>In Italy, Sicily is where the feeling with faith is more clear and
+                                            <p class="cms-repeatable">In Italy, Sicily is where the feeling with faith
+                                                is more clear and
                                                 visible in its most dramatic and mysterious side, in most of the
                                                 parades/processions the orchestra plays dead marches.
                                                 I spent there about a week, but a couple of days only (Holy Thursday &
@@ -2800,7 +2975,7 @@
                                                 that was a choir having rehearses inside a Church, taken from outside
                                                 but really close to the main (closed) door, mixed with the voices of
                                                 people in the square around me. (Giovanni Lami)</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>They're not processed, just subtly equalized and cropped, taken using
                                                     a Schoeps Colette stereo pair: CMC6 amplifier w/ cardioid capsule
                                                     (MK4) mounted ORTF on Schoeps UMS20 bracket, w/ a pair of Rycote
@@ -2815,7 +2990,8 @@
 
                     <li class="list__item--releases">
                         <div class="list">
-                            <div class="list__container">
+                            <div class="opener--cms"></div>
+                            <div class="list__container cms-editable" id="album28">
                                 <figure>
                                     <a class="item__cover list__title">
                                         <img src="assets/images/releases/to-die-for/to-die-for.jpeg">
@@ -2828,8 +3004,10 @@
                                 <div class="list__info">
                                     <div class="card">
                                         <div class="card__gallery">
-                                            <img src="assets/images/releases/to-die-for/to-die-for.jpeg">
-                                            <img src="assets/images/releases/to-die-for/to-die-for-01.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/to-die-for/to-die-for.jpeg">
+                                            <img class="cms-repeatable"
+                                                src="assets/images/releases/to-die-for/to-die-for-01.jpeg">
                                         </div>
 
                                         <div class="card__text">
@@ -2837,13 +3015,16 @@
                                             <p class="buy txt--minor"><a
                                                     href="https://soundcloud.com/giovannilami/sets/to-die-for-a-fur-coat"
                                                     target="_blank">Listen and free download here</a></p>
-                                            <p>/2013</p>
-                                            <p>A self-released CD (100pcs) about my work concerning an investigation to
+                                            <p class="cms-repeatable">/2013</p>
+                                            <p class="cms-repeatable">A self-released CD (100pcs) about my work
+                                                concerning an investigation to
                                                 ban fur farming in Italy.</p>
-                                            <p>5€. All the amount will be used to carry on the campaign to ban fur
+                                            <p class="cms-repeatable">5€. All the amount will be used to carry on the
+                                                campaign to ban fur
                                                 factories in Italy</p>
-                                            <p>To have a copy just write me or grab it when we’ll meet here or there</p>
-                                            <div class="card__text--credits txt--minor">
+                                            <p class="cms-repeatable">To have a copy just write me or grab it when we’ll
+                                                meet here or there</p>
+                                            <div class="card__text--credits txt--minor cms-repeatable">
                                                 <p>Recorded in winter 2012/13 via schoeps CMC6 /MK4</p>
                                                 <p>To Die for a Fur Coat (studio version)</p>
                                                 <p>Riverbanks (uncut)</p>

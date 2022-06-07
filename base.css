@@ -92,7 +92,7 @@ video {
     padding: 0;
     border: 0;
     font: inherit;
-    vertical-align: baseline
+    vertical-align: baseline;
 }
 
 article,
@@ -106,17 +106,17 @@ hgroup,
 menu,
 nav,
 section {
-    display: block
+    display: block;
 }
 
 ol,
 ul {
-    list-style: none
+    list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none
+    quotes: none;
 }
 
 blockquote:after,
@@ -124,41 +124,41 @@ blockquote:before,
 q:after,
 q:before {
     content: "";
-    content: none
+    content: none;
 }
 
 table {
     border-collapse: collapse;
-    border-spacing: 0
+    border-spacing: 0;
 }
 
 html {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 :after,
 :before {
-    box-sizing: inherit
+    box-sizing: inherit;
 }
 
 a,
 del,
 ins {
-    text-decoration: none
+    text-decoration: none;
 }
 
 a {
-    color: inherit
+    color: inherit;
 }
 
 button,
 label {
-    cursor: pointer
+    cursor: pointer;
 }
 
 button,
 input {
-    outline: 0
+    outline: 0;
 }
 
 p::-moz-selection,
@@ -170,6 +170,11 @@ br::-moz-selection,
 span::-moz-selection,
 a::-moz-selection,
 li::-moz-selection,
+i::-moz-selection,
+em::-moz-selection,
+strong::-moz-selection,
+u::-moz-selection,
+sup::-moz-selection,
 img::-moz-selection,
 audio::-moz-selection,
 video::-moz-selection,
@@ -188,6 +193,11 @@ br::selection,
 span::selection,
 a::selection,
 li::selection,
+i::selection,
+em::selection,
+strong::selection,
+u::selection,
+sup::selection,
 img::selection,
 audio::selection,
 video::selection,

@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giovanni Lami – Media</title>
-
+    <meta name="description"
+        content="Giovanni Lami is a sound artist and musician who works within soundscape and sound-ecology boundaries since 2009/10">
+    <link rel="canonical" href="https://www.giovannilami.com/">
+    <meta name="keywords" content="sound, artist, musician, soundscape, sound-ecology">
     <meta property="og:locale" content="en_IT">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Giovanni Lami">
@@ -32,7 +35,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/rpe5xur.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -48,8 +52,8 @@
         </ul>
     </nav>
     <section class="landing">
-        <div class="landing__image"></div>
-        <div class="ui--scroll">
+        <div class="landing__image cms-editable" data-type="background" id="landing__image"></div>
+        <div class="ui--scroll cms-lock">
             <p>Scroll down</p>
         </div>
     </section>
@@ -64,9 +68,9 @@
 
     <main class="content__wrapper" data-barba="wrapper">
         <section class="content__container" data-barba="container" data-barba-namespace="media">
-            <div class="content">
+            <div class="content cms-editable" id="content">
                 <ul class="grid__list">
-                    <li class="list__item--media">
+                    <li class="list__item--media cms-repeatable">
                         <figure>
                             <a class="item__cover"
                                 href="https://player.vimeo.com/video/260454981?h=01dfa0e03c&color=ffffff&title=0&byline=0&portrait=0"
@@ -80,7 +84,7 @@
                         </figure>
                     </li>
 
-                    <li class="list__item--media">
+                    <li class="list__item--media cms-repeatable">
                         <figure>
                             <a class="item__cover"
                                 href="https://player.vimeo.com/video/326220569?title=0&byline=0&portrait=0"
@@ -94,7 +98,7 @@
                         </figure>
                     </li>
 
-                    <li class="list__item--media">
+                    <li class="list__item--media cms-repeatable">
                         <figure>
                             <a class="item__cover" href="https://player.vimeo.com/video/301814642?h=9c12148b5e"
                                 target="_blank">
@@ -107,7 +111,7 @@
                         </figure>
                     </li>
 
-                    <li class="list__item--media">
+                    <li class="list__item--media cms-repeatable">
                         <figure>
                             <a class="item__cover" href="https://www.youtube-nocookie.com/embed/VtcogqtB7jo"
                                 target="_blank">
@@ -115,12 +119,11 @@
                             </a>
                             <figcaption>
                                 <h2 class="item__title">Live at FORMA Free Music Impulse #8</h2>
-                                <!-- <p class="txt--minor">Video by Ursss</p> -->
                             </figcaption>
                         </figure>
                     </li>
 
-                    <li class="list__item--media">
+                    <li class="list__item--media cms-repeatable">
                         <figure>
                             <a class="item__cover"
                                 href="https://player.vimeo.com/video/240811350?h=68c9f9a0d7&color=ffffff&title=0&byline=0&portrait=0"
@@ -134,7 +137,7 @@
                         </figure>
                     </li>
 
-                    <li class="list__item--media">
+                    <li class="list__item--media cms-repeatable">
                         <figure>
                             <a class="item__cover"
                                 href="https://player.vimeo.com/video/239377177?h=8b878b845e&color=ffffff&title=0&byline=0&portrait=0"
@@ -147,7 +150,7 @@
                         </figure>
                     </li>
 
-                    <li class="list__item--media">
+                    <li class="list__item--media cms-repeatable">
                         <figure>
                             <a class="item__cover"
                                 href="https://player.vimeo.com/video/223753784?h=0442aa81ed&color=ffffff&title=0&byline=0&portrait=0"
@@ -159,7 +162,7 @@
                         </figure>
                     </li>
 
-                    <li class="list__item--media">
+                    <li class="list__item--media cms-repeatable">
                         <figure>
                             <a class="item__cover" href="https://www.youtube-nocookie.com/embed/EQHvVXfSuGs>"
                                 target="_blank"><img src="assets/images/media/video-claustre-renaixentista.png"
@@ -171,7 +174,7 @@
                         </figure>
                     </li>
 
-                    <li class="list__item--media">
+                    <li class="list__item--media cms-repeatable">
                         <figure>
                             <a class="item__cover" href="https://www.youtube-nocookie.com/embed/ZAng9jRu6ZY"
                                 target="_blank"><img src="assets/images/media/video-lami-malatesta.png"
@@ -183,7 +186,7 @@
                         </figure>
                     </li>
 
-                    <li class="list__item--media">
+                    <li class="list__item--media cms-repeatable">
                         <figure>
                             <a class="item__cover" href="https://vimeo.com/133274261" target="_blank"><img
                                     src="assets/images/media/video-khora.png" width="100%"></a>

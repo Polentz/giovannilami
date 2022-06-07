@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giovanni Lami – Projects</title>
-
+    <meta name="description"
+        content="Giovanni Lami is a sound artist and musician who works within soundscape and sound-ecology boundaries since 2009/10">
+    <link rel="canonical" href="https://www.giovannilami.com/">
+    <meta name="keywords" content="sound, artist, musician, soundscape, sound-ecology">
     <meta property="og:locale" content="en_IT">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Giovanni Lami">
@@ -32,7 +35,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/rpe5xur.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -48,8 +52,8 @@
         </ul>
     </nav>
     <section class="landing">
-        <div class="landing__image"></div>
-        <div class="ui--scroll">
+        <div class="landing__image cms-editable" data-type="background" id="landing__image"></div>
+        <div class="ui--scroll cms-lock">
             <p>Scroll down</p>
         </div>
     </section>
@@ -64,119 +68,146 @@
 
     <main class="content__wrapper" data-barba="wrapper">
         <section class="content__container" data-barba="container" data-barba-namespace="about">
-            <div class="content --projects">
-                <div class="content__copy sticky">
-                    <h2>Nuova superficie</h2>
-                    <p>The duo of Lami-Malatesta is based upon an active idea of horizontal actions in progress, that
-                        slowly change and melt over the course of the performance. Sound originates from several
-                        speakers and – in general – from different diffusion points, amplified or not, analog or
-                        acoustic, in a non-referential movement. The one and only need is to produce a simple
-                        sound-mass, seemingly static but unceasingly evolving through the labour of the musicians. They
-                        use their own instruments (as form and gesture) mainly on the surface, moving objects and
-                        working upon the skin of an amplified snare or directly in contact with the tape of the
-                        reel-to-reel recorder, trying to activate what is already present there but quiescent.</p>
-                    <p>The aim is to realize a complex sound-space where each listening-experience can be free to
-                        evolve and wander and get lost. The sound is made from several diffusion points and is defined
-                        by sounds on the cusp of a dense texture, really homogeneous yet rich in detail and
-                        micro-perturbations. This non-stop negotiation between details on the horizon and the horizon
-                        itself, this lack of balance, and the interaction with the space hosting the performance is the
-                        base of this project, that could be considered as something in between electroacoustic music and
-                        site-specific action.</p>
-                    <p class="play txt--minor"><a
-                            href="https://soundcloud.com/giovannilami/cut01?in=giovannilami/sets/lami-malatesta-duo"
-                            target="_blank">Cut#01</a></p>
-                    <p class="play txt--minor"><a
-                            href="https://soundcloud.com/giovannilami/cut02?in=giovannilami/sets/lami-malatesta-duo"
-                            target="_blank">Cut#02</a></p>
-                    <p class="play txt--minor"><a
-                            href="https://soundcloud.com/giovannilami/cut03?in=giovannilami/sets/lami-malatesta-duo"
-                            target="_blank">Cut#03</a></p>
-                </div>
-                <div class="content__copy">
-                    <img src="assets/images/projects/NS-01.jpeg" width="100%">
-                    <img src="assets/images/projects/NS-03.jpeg" width="100%">
-                    <img src="assets/images/projects/NS-02.jpeg" width="100%">
-                    <img src="assets/images/projects/NS-04.jpeg" width="100%">
-                    <img src="assets/images/projects/NS-05.jpeg" width="100%">
-                    <img src="assets/images/projects/NS-06.jpeg" width="100%">
-                    <div class="txt--minor">
-                        <p>March 01, 2019 – Centro d’arte, Padova (I)</p>
-                        <p>January 12, 2019 – Cave12, Geneve (CH)</p>
-                        <p>June 16, 2018 – LaDigestion Festival, Napoli (I)</p>
-                        <p>July 15, 2017 – Santarcangelo Festival 2017, Santarcangelo (I)</p>
-                        <p>July 09, 2017 – Santarcangelo Festival 2017, Santarcangelo (I)</p>
-                        <p>June 18, 2017 – Festival della Fiaba, Modena (I)</p>
-                        <p>May 22-28, 2017 – production residency /Apache Festival, Milano (I)</p>
-                        <p>October 22, 2016 – NODE Festival, Modena (I)</p>
-                        <p>September 29, 2016 – San Michele Off, Bagnacavallo – Ravenna (I)</p>
-                        <p>September 18, 2016 – Paradoxes, Ravenna (I)</p>
-                        <p>July 16, 2016 – Santarcangelo Festival, Santarcangelo (I)</p>
+            <div class="content cms-editable" id="content">
+                <div class="--projects cms-repeatable">
+                    <div class="content__copy sticky">
+                        <h2>Nuova superficie</h2>
+                        <p class="cms-repeatable">The duo of Lami-Malatesta is based upon an active idea of horizontal
+                            actions in
+                            progress, that
+                            slowly change and melt over the course of the performance. Sound originates from several
+                            speakers and – in general – from different diffusion points, amplified or not, analog or
+                            acoustic, in a non-referential movement. The one and only need is to produce a simple
+                            sound-mass, seemingly static but unceasingly evolving through the labour of the musicians.
+                            They
+                            use their own instruments (as form and gesture) mainly on the surface, moving objects and
+                            working upon the skin of an amplified snare or directly in contact with the tape of the
+                            reel-to-reel recorder, trying to activate what is already present there but quiescent.</p>
+                        <p class="cms-repeatable">The aim is to realize a complex sound-space where each
+                            listening-experience can be
+                            free to
+                            evolve and wander and get lost. The sound is made from several diffusion points and is
+                            defined
+                            by sounds on the cusp of a dense texture, really homogeneous yet rich in detail and
+                            micro-perturbations. This non-stop negotiation between details on the horizon and the
+                            horizon
+                            itself, this lack of balance, and the interaction with the space hosting the performance is
+                            the
+                            base of this project, that could be considered as something in between electroacoustic music
+                            and
+                            site-specific action.</p>
+                        <p class="play txt--minor cms-repeatable"><a
+                                href="https://soundcloud.com/giovannilami/cut01?in=giovannilami/sets/lami-malatesta-duo"
+                                target="_blank">Cut#01</a></p>
+                        <p class="play txt--minor cms-repeatable"><a
+                                href="https://soundcloud.com/giovannilami/cut02?in=giovannilami/sets/lami-malatesta-duo"
+                                target="_blank">Cut#02</a></p>
+                        <p class="play txt--minor cms-repeatable"><a
+                                href="https://soundcloud.com/giovannilami/cut03?in=giovannilami/sets/lami-malatesta-duo"
+                                target="_blank">Cut#03</a></p>
                     </div>
-                    <figure>
-                        <a class="item__cover" href="https://www.youtube-nocookie.com/embed/ZAng9jRu6ZY"
-                            target="_blank"><img src="assets/images/projects/NS-video.png" width="100%"></a>
-                        <figcaption>
-                            <p class="txt--minor">Nuova Superficie teaser</p>
-                        </figcaption>
-                    </figure>
+                    <div class="content__copy">
+                        <img class="cms-repeatable" src="assets/images/projects/NS-01.jpeg">
+                        <img class="cms-repeatable" src="assets/images/projects/NS-03.jpeg">
+                        <img class="cms-repeatable" src="assets/images/projects/NS-02.jpeg">
+                        <img class="cms-repeatable" src="assets/images/projects/NS-04.jpeg">
+                        <img class="cms-repeatable" src="assets/images/projects/NS-05.jpeg">
+                        <img class="cms-repeatable" src="assets/images/projects/NS-06.jpeg">
+                        <div class="txt--minor cms-repeatable">
+                            <p>March 01, 2019 – Centro d’arte, Padova (I)</p>
+                            <p>January 12, 2019 – Cave12, Geneve (CH)</p>
+                            <p>June 16, 2018 – LaDigestion Festival, Napoli (I)</p>
+                            <p>July 15, 2017 – Santarcangelo Festival 2017, Santarcangelo (I)</p>
+                            <p>July 09, 2017 – Santarcangelo Festival 2017, Santarcangelo (I)</p>
+                            <p>June 18, 2017 – Festival della Fiaba, Modena (I)</p>
+                            <p>May 22-28, 2017 – production residency /Apache Festival, Milano (I)</p>
+                            <p>October 22, 2016 – NODE Festival, Modena (I)</p>
+                            <p>September 29, 2016 – San Michele Off, Bagnacavallo – Ravenna (I)</p>
+                            <p>September 18, 2016 – Paradoxes, Ravenna (I)</p>
+                            <p>July 16, 2016 – Santarcangelo Festival, Santarcangelo (I)</p>
+                        </div>
+                        <figure class="cms-repeatable">
+                            <a class="item__cover" href="https://www.youtube-nocookie.com/embed/ZAng9jRu6ZY"
+                                target="_blank"><img src="assets/images/projects/NS-video.png"></a>
+                            <figcaption>
+                                <p class="txt--minor">Nuova Superficie teaser</p>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
-            </div>
-            <div class="content --projects">
-                <div class="content__copy sticky">
-                    <h2>Hysteresis</h2>
-                    <p>On the meditation about the arrangement of sound events and layering them on the timeline
-                        I-V (2017)</p>
-                    <p>I realized that it can take other forms, others then the one imposed. Not just a section, but a
-                        circle or an ellipse, a closed path where you may see a cyclic repeat of events where not
-                        everything has a beginning and an end.</p>
-                    <p>So, impressing /recording these events on the tape does not happen in a linear way, but through
-                        changes of direction, slowdowns and disconnections between the time the event happens in the
-                        real and its repetition on the new timeline. It’s still linear of course, but internally
-                        configured by successions of recurring sound-germs, arranged on different levels and filtered in
-                        a different ways. It’s like a patina laying on the renewed patina, on a renewed patina, on the
-                        renewed surface, recorded on tape.</p>
-                    <p>Curling / Crumpling</p>
-                    <p>There is a perfect match between hysteresis (concept) and this kind of practice: both are in the
-                        field of reality, and both are related to objects (physical objects, sound objects, living
-                        things).</p>
-                    <p>$and / ßand</p>
-                    <p class="play txt--minor"><a href="https://giovannilami.bandcamp.com/album/hysteresis-i"
-                            target="_blank">Hysteresis I</a></p>
-                    <p class="play txt--minor"><a href="https://czaszka.bandcamp.com/album/hysteresis-ii"
-                            target="_blank">Hysteresis II</a></p>
-                    <p class="play txt--minor"><a href="https://giovannilami.bandcamp.com/album/hysteresis-iii"
-                            target="_blank">Hysteresis III</a></p>
-                    <p class="play txt--minor"><a href="https://falt.bandcamp.com/album/hysteresis-iv"
-                            target="_blank">Hysteresis IV</a></p>
 
-
-                </div>
-                <div class="content__copy">
-                    <img src="assets/images/projects/H-01.png" width="100%">
-                    <p class="txt--minor">
-                        Se la farfalla al suo splendor ameno vola, non sa ch’è fiamma al fin discara; se, quand’il
-                        cervio per sete vien meno, al rio va, non sa della freccia amara; s’il lioncorno corre al casto
-                        seno, non vede il laccio che se gli prepara. I’al lume, al fonte, al grembo del mio bene, veggio
-                        le fiamme, i strali e le catene. S’è dolce il mio languire, perché quell’alta face sì m’appaga,
-                        perché l’arco divin sì dolce impiaga, perché in quel nodo è avvolto il mio desire, mi fien
-                        eterni impacci fiamme al cor, strali al petto, a l’alma lacci. (Giordano Bruno)</p>
-                    <figure>
-                        <a class="item__cover"
-                            href="https://player.vimeo.com/video/223753784?h=0442aa81ed&color=ffffff&title=0&byline=0&portrait=0"
-                            target="_blank"><img src="assets/images/projects/H-video-Hys-ii.png" width="100%"></a>
-                        <figcaption>
-                            <p class="txt--minor">Hysteresis II</p>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <a class="item__cover"
-                            href="https://player.vimeo.com/video/238351530?h=ab6049f927&color=ffffff&title=0&byline=0&portrait=0"
-                            target="_blank"><img src="assets/images/projects/H-video-Hys-iv.png" width="100%"></a>
-                        <figcaption>
-                            <p class="txt--minor">Hysteresis IV</p>
-                        </figcaption>
-                    </figure>
-
+                <div class="--projects cms-repeatable">
+                    <div class="content__copy sticky">
+                        <h2>Hysteresis</h2>
+                        <p class="cms-repeatable">On the meditation about the arrangement of sound events and layering
+                            them on the
+                            timeline
+                            I-V (2017)</p>
+                        <p class="cms-repeatable">I realized that it can take other forms, others then the one imposed.
+                            Not just a
+                            section, but a
+                            circle or an ellipse, a closed path where you may see a cyclic repeat of events where not
+                            everything has a beginning and an end.</p>
+                        <p class="cms-repeatable">So, impressing /recording these events on the tape does not happen in
+                            a linear
+                            way, but through
+                            changes of direction, slowdowns and disconnections between the time the event happens in the
+                            real and its repetition on the new timeline. It’s still linear of course, but internally
+                            configured by successions of recurring sound-germs, arranged on different levels and
+                            filtered in
+                            a different ways. It’s like a patina laying on the renewed patina, on a renewed patina, on
+                            the
+                            renewed surface, recorded on tape.</p>
+                        <p class="cms-repeatable">Curling / Crumpling</p>
+                        <p class="cms-repeatable">There is a perfect match between hysteresis (concept) and this kind of
+                            practice:
+                            both are in the
+                            field of reality, and both are related to objects (physical objects, sound objects, living
+                            things).</p>
+                        <p class="cms-repeatable">$and / ßand</p>
+                        <p class="play txt--minor cms-repeatable"><a
+                                href="https://giovannilami.bandcamp.com/album/hysteresis-i" target="_blank">Hysteresis
+                                I</a>
+                        </p>
+                        <p class="play txt--minor cms-repeatable"><a
+                                href="https://czaszka.bandcamp.com/album/hysteresis-ii" target="_blank">Hysteresis
+                                II</a></p>
+                        <p class="play txt--minor cms-repeatable"><a
+                                href="https://giovannilami.bandcamp.com/album/hysteresis-iii" target="_blank">Hysteresis
+                                III</a></p>
+                        <p class="play txt--minor cms-repeatable"><a
+                                href="https://falt.bandcamp.com/album/hysteresis-iv" target="_blank">Hysteresis IV</a>
+                        </p>
+                    </div>
+                    <div class="content__copy">
+                        <img class="cms-repeatable" src="assets/images/projects/H-01.png">
+                        <p class="txt--minor cms-repeatable">
+                            Se la farfalla al suo splendor ameno vola, non sa ch’è fiamma al fin discara; se, quand’il
+                            cervio per sete vien meno, al rio va, non sa della freccia amara; s’il lioncorno corre al
+                            casto
+                            seno, non vede il laccio che se gli prepara. I’al lume, al fonte, al grembo del mio bene,
+                            veggio
+                            le fiamme, i strali e le catene. S’è dolce il mio languire, perché quell’alta face sì
+                            m’appaga,
+                            perché l’arco divin sì dolce impiaga, perché in quel nodo è avvolto il mio desire, mi fien
+                            eterni impacci fiamme al cor, strali al petto, a l’alma lacci. (Giordano Bruno)</p>
+                        <figure class="cms-repeatable">
+                            <a class="item__cover"
+                                href="https://player.vimeo.com/video/223753784?h=0442aa81ed&color=ffffff&title=0&byline=0&portrait=0"
+                                target="_blank"><img src="assets/images/projects/H-video-Hys-ii.png"></a>
+                            <figcaption>
+                                <p class="txt--minor">Hysteresis II</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="cms-repeatable">
+                            <a class="item__cover"
+                                href="https://player.vimeo.com/video/238351530?h=ab6049f927&color=ffffff&title=0&byline=0&portrait=0"
+                                target="_blank"><img src="assets/images/projects/H-video-Hys-iv.png"></a>
+                            <figcaption>
+                                <p class="txt--minor">Hysteresis IV</p>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
             <a class="ui--up" href="#menu"></a>
