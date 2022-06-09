@@ -299,9 +299,12 @@ li figcaption {
     margin-top: 1rem;
 }
 
+.--aspect-ratio img {
+    aspect-ratio: 1;
+}
+
 .item__cover img {
     width: 100%;
-    aspect-ratio: 1;
     position: relative;
     z-index: 2;
     transition: -webkit-filter 1s ease-out;
